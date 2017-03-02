@@ -10,7 +10,7 @@ var arbolForma = new THREE.Geometry();
 arbolForma.merge(troncoMalla.geometry, troncoMalla.matrix);
 arbolForma.merge(esferaMalla.geometry, esferaMalla.matrix);
 
-var material = new THREE.MeshNormalMaterial({color: 0xffff00});
+var material = new THREE.MeshNormalMaterial();
 var arbolMalla = new THREE.Mesh(arbolForma, material);
 
 var escena = new THREE.Scene();
