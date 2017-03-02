@@ -25,7 +25,7 @@ var geometry = new THREE.ShapeGeometry( heartShape );
 var material = new THREE.MeshNormalMaterial();
 
 var malla = new THREE.Mesh( geometry, material );
-malla.rotateX( Math.PI/12 );
+malla.rotateY( Math.PI/4 );
 
 var escena = new THREE.Scene();
 escena.add(malla);
