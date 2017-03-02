@@ -5,15 +5,13 @@ for ( var i = 0; i < 10; i ++ ) {
 }
 var esferaForma = new THREE.LatheGeometry( points, 36 );
 esferaForma.translate(1,5,1);
-
-var troncoMalla = new THREE.Mesh(troncoForma);
-var esferaMalla = new THREE.Mesh(esferaForma);
+troncoForma.translate(1,-1,1);
 
 var material = new THREE.MeshBasicMaterial( { color: 0x32CD32 } );
-var florMalla = new THREE.Mesh(esferaMalla, material);
-
 var material2 = new THREE.MeshBasicMaterial( { color: 0xE6DF0E } );
-var talloMalla = new THREE.Mesh(troncoMalla, material2);
+
+var troncoMalla = new THREE.Mesh(troncoForma,material2);
+var esferaMalla = new THREE.Mesh(esferaForma, material);
 
 
 var arbolForma = new THREE.Geometry();
@@ -23,14 +21,11 @@ arbolForma.merge(esferaMalla.geometry, esferaMalla.matrix);
 
 
 
-
-
-
 var arbolMalla = new THREE.Mesh(arbolForma);
 
 
 var escena = new THREE.Scene();
-escena.add(florMalla, talloMalla);
+escena.add(arbolMalla);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 150;
