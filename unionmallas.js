@@ -4,7 +4,7 @@ for ( var i = 0; i < 10; i ++ ) {
 	points.push( new THREE.Vector2( Math.sin( i * 0.2 ) * 10 + 5, ( i - 5 ) * 2 ) );
 }
 var esferaForma = new THREE.LatheGeometry( points, 36 );
-esferaForma.translate(1,60,1);
+esferaForma.translate(1,50,1);
 troncoForma.translate(1,-1,1);
 
 var material = new THREE.MeshBasicMaterial( { color: 0x32CD32 } );
