@@ -30,7 +30,7 @@ var arbolMalla = new THREE.Mesh(arbolForma);
 
 
 var escena = new THREE.Scene();
-escena.add(arbolMalla);
+escena.add(flormaMalla, talloMalla);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
