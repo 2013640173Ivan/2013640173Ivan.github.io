@@ -2,7 +2,7 @@ var troncoForma = new THREE.CylinderGeometry(.25, .5, 1);
 var esferaForma = new THREE.TorusKnotGeometry(10, 3, 100, 16);
 esferaForma.translate(1,1,1);
 
-/var troncoMalla = new THREE.Mesh(troncoForma);
+var troncoMalla = new THREE.Mesh(troncoForma);
 var esferaMalla = new THREE.Mesh(esferaForma);
 
 var arbolForma = new THREE.Geometry();
