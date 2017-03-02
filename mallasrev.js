@@ -17,7 +17,7 @@ heartShape.bezierCurveTo( x + 12, y + 15.4, x + 16, y + 11, x + 16, y + 7 );
 heartShape.bezierCurveTo( x + 16, y + 7, x + 16, y, x + 10, y );
 heartShape.bezierCurveTo( x + 7, y, x + 5, y + 5, x + 5, y + 5 );
 
-var geometry = new THREE.ShapeGeometry( heartShape );
+var geometry = new THREE.LatheGeometry( heartShape );
 
 
 //var forma = new THREE.LatheGeometry(puntos);
