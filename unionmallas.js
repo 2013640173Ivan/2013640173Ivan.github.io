@@ -19,7 +19,7 @@ arbolForma.merge(esferaMalla.geometry, esferaMalla.matrix);
 
 
 
-/var material2 = new THREE.MeshBasicMaterial( { color: 0xE6DF0E } );
+//var material2 = new THREE.MeshBasicMaterial( { color: 0xE6DF0E } );
 
 
 
