@@ -27,7 +27,7 @@ figura.lineTo(-240, 20);
 figura.lineTo(-50, -170);
 figura.lineTo(-85, -95);
 figura.lineTo(-160, -40);
-figura.fill();
+
 
 var forma = new THREE.ExtrudeGeometry( figura,
                                        {amount: 10} );
