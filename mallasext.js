@@ -23,10 +23,10 @@ figura.lineTo(140, -220);
 figura.lineTo(80, -280);
 figura.lineTo(0, -240);
 figura.lineTo(30, -160);
-figura.lineTo(-240, 20);
 figura.lineTo(-50, -170);
-figura.lineTo(-85, -95);
+figura.lineTo(-120, -120);
 figura.lineTo(-160, -40);
+
 
 
 var forma = new THREE.ExtrudeGeometry( figura,
@@ -34,7 +34,7 @@ var forma = new THREE.ExtrudeGeometry( figura,
                                        
                                 var material = new THREE.MeshNormalMaterial();
 var malla = new THREE.Mesh( forma, material );
-malla.rotateY( Math.PI/8 );
+//malla.rotateY( Math.PI/8 );
 
 var escena = new THREE.Scene();
 escena.add(malla);
