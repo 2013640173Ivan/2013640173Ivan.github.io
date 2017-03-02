@@ -8,8 +8,12 @@ esferaForma.translate(1,3,1);
 
 var troncoMalla = new THREE.Mesh(troncoForma);
 var esferaMalla = new THREE.Mesh(esferaForma);
+
 var material = new THREE.MeshBasicMaterial( { color: 0x32CD32 } );
 var florMalla = new THREE.Mesh(esferaMalla, material);
+
+var material2 = new THREE.MeshBasicMaterial( { color: 0xE6DF0E } );
+var talloMalla = new THREE.Mesh(troncoMalla, material2);
 
 
 var arbolForma = new THREE.Geometry();
@@ -19,10 +23,10 @@ arbolForma.merge(esferaMalla.geometry, esferaMalla.matrix);
 
 
 
-//var material2 = new THREE.MeshBasicMaterial( { color: 0xE6DF0E } );
 
 
 
+var arbolMalla = new THREE.Mesh(arbolForma);
 
 
 var escena = new THREE.Scene();
