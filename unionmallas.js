@@ -4,7 +4,7 @@ for ( var i = 0; i < 10; i ++ ) {
 	points.push( new THREE.Vector2( Math.sin( i * 0.2 ) * 10 + 5, ( i - 5 ) * 2 ) );
 }
 var esferaForma = new THREE.LatheGeometry( points );
-esferaForma.translate(1,1,1);
+esferaForma.translate(1,3,1);
 
 var troncoMalla = new THREE.Mesh(troncoForma);
 var esferaMalla = new THREE.Mesh(esferaForma);
