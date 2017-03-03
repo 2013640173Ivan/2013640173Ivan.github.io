@@ -8,7 +8,7 @@ var sphere = new THREE.Mesh( geometry, material );
 
 var troncoForma = new THREE.CylinderGeometry(3, 6, 10);
 var troncoMalla = new THREE.Mesh(troncoForma);
-troncoMalla.position.set(0, -5, 0);
+troncoMalla.position.set(0, 0, 0);
 
 var ojoi=new THREE.SphereGeometry(1.5,32,32);
 ojoi.translate(-2,2,8);
