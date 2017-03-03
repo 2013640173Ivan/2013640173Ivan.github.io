@@ -38,7 +38,7 @@ ojod.translate(1.5,12,10);
 var mallojod =new THREE.Mesh( ojod, material2);
 
 
-var ojos=new THREE.SphereGeometry(6,32,32);
+var ojos=new THREE.SphereGeometry(5,32,32);
 ojos.translate(0,12,0);
 var mallojos =new THREE.Mesh( ojos, material2);
 
@@ -108,7 +108,7 @@ pingui.merge(mallapied.geometry, mallapied.matrix);
 
 var material3 = new THREE.MeshNormalMaterial();
 var mallapingui = new THREE.Mesh(pingui, material3);
-//mallapingui.rotateY( Math.PI/4 );
+mallapingui.rotateY( Math.PI/4 );
 var escena = new THREE.Scene();
 escena.add(mallapingui);
 
