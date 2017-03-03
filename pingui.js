@@ -57,7 +57,7 @@ forma.computeBoundingSphere();
 
 forma.computeFaceNormals();
 
-var material = new THREE.MeshNormalMaterial();
+//var material = new THREE.MeshNormalMaterial();
 
 var mallapic = new THREE.Mesh( forma, material );
 
@@ -102,7 +102,7 @@ pingui.merge(mallapied.geometry, mallapied.matrix);
 
 
 var mallapingui = new THREE.Mesh(pingui, material);
-//mallabomba.rotateY( Math.PI/4 );
+mallapingui.rotateY( Math.PI/4 );
 var escena = new THREE.Scene();
 escena.add(mallapingui);
 
