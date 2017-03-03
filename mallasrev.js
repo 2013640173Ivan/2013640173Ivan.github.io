@@ -62,8 +62,8 @@ hongoForma.merge(mallapiei.geometry, mallapiei.matrix);
 var material2 = new THREE.MeshNormalMaterial();
 var mallahongoForma = new THREE.Mesh(hongoForma, material2);
 
-var escena = new THREE.Scene();
-//escena.add(mallahongoForma);
+//var escena = new THREE.Scene();
+escena.add(mallahongoForma);
 
 escena.add(sphere,troncoMalla,mallojoi,mallojod,mallapied,mallapiei);
 
