@@ -20,18 +20,31 @@
 //var geometry = new THREE.LatheGeometry( heartShape );
 
 
-var figura = new THREE.Shape();
+//var figura = new THREE.Shape();
 
-figura.moveTo(10, 10);
-figura.lineTo(10, 40);
-figura.lineTo(40, 40);
-figura.lineTo(10, 10);
+//figura.moveTo(10, 10);
+//figura.lineTo(10, 40);
+//figura.lineTo(40, 40);
+//figura.lineTo(10, 10);
 
-var forma = new THREE.LatheGeometry(figura);
+
+// points - (x, y) pairs are rotated around the y-axis
+var points = [];
+for ( var deg = 0; deg <= 180; deg += 6 ) {
+
+    var rad = Math.PI * deg / 180;
+    var point = new THREE.Vector2( ( 0.72 + .08 * Math.cos( rad ) ) * Math.sin( rad ), - Math.cos( rad ) ); // the "egg equation"
+    //console.log( point ); // x-coord should be greater than zero to avoid degenerate triangles; it is not in this formula.
+    points.push( point );
+
+}
+
+var geometry = new THREE.LatheBufferGeometry( points, 32 );
+//var forma = new THREE.LatheGeometry(figura);
 
 var material = new THREE.MeshNormalMaterial();
 
-var malla = new THREE.Mesh( forma, material );
+var malla = new THREE.Mesh( geometry, material );
 malla.rotateY( Math.PI/6 );
 
 var escena = new THREE.Scene();
