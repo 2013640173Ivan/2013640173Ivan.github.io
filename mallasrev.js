@@ -28,7 +28,7 @@ figura.lineTo(5.2, -4.05);
 figura.lineTo(5, -4.05);
 figura.lineTo(5, -4);
 var pied = new THREE.ExtrudeGeometry( figura,
-                                       {amount: 1.5} );
+                                       {amount: 1} );
 
 var mallapied =new THREE.Mesh( pied, material);
 
