@@ -14,12 +14,18 @@ var ojoi=new THREE.SphereGeometry(1,32,32);
 ojoi.translate(-2,8,7);
 var mallojoi =new THREE.Mesh( ojoi, material);
 
+
+var ojod=new THREE.SphereGeometry(1,32,32);
+ojoi.translate(2,8,7);
+var mallojod =new THREE.Mesh( ojod, material);
+
 var hongoForma = new THREE.Geometry();
 
 
 hongoForma.merge(sphere.geometry, sphere.matrix);
 hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
 hongoForma.merge(mallojoi.geometry, mallojoi.matrix);
+hongoForma.merge(mallojod.geometry, mallojod.matrix);
 
 
 
