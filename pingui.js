@@ -12,8 +12,6 @@ geometry = new THREE.LatheBufferGeometry( points, 32 );
 
 Ovo = new THREE.Mesh( geometry);
 Ovo.position.set(0, 0, 0);
-var escena = new THREE.Scene();
-escena.add(Ovo);
 
 //escena.add(sphere,troncoMalla,mallojoi,mallojod,mallapied,mallapiei);
 
@@ -21,6 +19,11 @@ var geometry = new THREE.SphereBufferGeometry( 5, 32, 32 );
 var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
 var sphere = new THREE.Mesh( geometry, material );
 sphere.position.set(0,5,0)
+
+
+var escena = new THREE.Scene();
+escena.add(Ovo,sphere);
+
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
