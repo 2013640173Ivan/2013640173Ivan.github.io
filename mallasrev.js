@@ -1,5 +1,5 @@
 var geometry = new THREE.SphereGeometry( 10, 60, 60, Math.PI, Math.PI*2, 3*Math.PI/2);
-geometry.translate(0,6,0)
+geometry.translate(0,5,0)
 var material = new THREE.MeshBasicMaterial( { color: 0xddddff } );
 var sphere = new THREE.Mesh( geometry, material );
 //scene.add( sphere );
@@ -11,12 +11,12 @@ var troncoMalla = new THREE.Mesh(troncoForma);
 troncoMalla.position.set(0, 6, 0);
 
 var ojoi=new THREE.SphereGeometry(1,32,32);
-ojoi.translate(-2.5,10,9);
+ojoi.translate(-2.5,9,9);
 var mallojoi =new THREE.Mesh( ojoi, material);
 
 
 var ojod=new THREE.SphereGeometry(1,32,32);
-ojod.translate(2.5,10,9);
+ojod.translate(2.5,9,9);
 var mallojod =new THREE.Mesh( ojod, material);
 
 
