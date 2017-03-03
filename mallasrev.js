@@ -22,6 +22,7 @@ var geometry = new THREE.SphereGeometry( 8, 32, 15, 1*Math.PI/2, 2*Math.PI, Math
 var material = new THREE.MeshBasicMaterial( { color: 0xddddff } );
 var sphere = new THREE.Mesh( geometry, material );
 //scene.add( sphere );
+sphere.position.set(0,10,0);
 
 
 var troncoForma = new THREE.CylinderGeometry(3, 6, 10);
@@ -34,9 +35,10 @@ var mallojoi =new THREE.Mesh( ojoi, material);
 
 var hongoForma = new THREE.Geometry();
 
-hongoForma.merge(sphere.geometry, sphere.matrix);
-hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
-hongoForma.merge(mallojoi.geometry, mallojoi.matrix);
+
+//hongoForma.merge(sphere.geometry, sphere.matrix);
+//hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
+//hongoForma.merge(mallojoi.geometry, mallojoi.matrix);
 
 
 
@@ -44,10 +46,10 @@ hongoForma.merge(mallojoi.geometry, mallojoi.matrix);
 
 
 var material2 = new THREE.MeshNormalMaterial();
-var mallahongoForma = new THREE.Mesh(hongoForma, material2);
+//var mallahongoForma = new THREE.Mesh(hongoForma, material2);
 
 var escena = new THREE.Scene();
-escena.add(mallahongoForma);
+escena.add(sphere,troncoMalla,mallojoi);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
