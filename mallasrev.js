@@ -18,7 +18,7 @@ var mallacabeza = new THREE.Mesh( cabeza, material );
 mallacabeza.rotateY( Math.PI/6 );
 mallacabeza.position.set(0, 10, 0);
 
-var troncoForma = new THREE.CylinderGeometry(3, 5, 9);
+var troncoForma = new THREE.CylinderGeometry(3, 6, 10);
 var troncoMalla = new THREE.Mesh(troncoForma);
 troncoMalla.position.set(0, -5, 0);
 
