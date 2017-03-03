@@ -37,7 +37,10 @@ var ojod=new THREE.SphereGeometry(1,32,32);
 ojod.translate(1.5,12,10);
 var mallojod =new THREE.Mesh( ojod, material);
 
-
+var geometry = new THREE.ConeGeometry( 1.5, 5, 32 );
+var material3 = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+var cone = new THREE.Mesh( geometry, material3 );
+cone.position.set(0,10,5)
 
 
 var pingui = new THREE.Geometry();
@@ -45,6 +48,7 @@ pingui.merge(Ovo.geometry, Ovo.matrix);
 pingui.merge(sphere.geometry, sphere.matrix);
 pingui.merge(mallojod.geometry, mallojod.matrix);
 pingui.merge(mallojoi.geometry, mallojoi.matrix);
+pingui.merge(cone.geometry, cone.matrix);
 
 
 var mallapingui = new THREE.Mesh(pingui, material);
@@ -54,7 +58,7 @@ var escena = new THREE.Scene();
 
 
 //var escena = new THREE.Scene();
-escena.add(Ovo,sphere,mallojod,mallojoi);
+escena.add(Ovo,sphere,mallojod,mallojoi,cone);
 
 
 var camara = new THREE.PerspectiveCamera();
