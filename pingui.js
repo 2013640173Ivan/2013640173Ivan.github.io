@@ -29,12 +29,12 @@ Ovo.position.set(0, 0, 0);
 
 
 var ojoi=new THREE.SphereGeometry(0.75,32,32);
-ojoi.translate(-1.5,12,10);
+ojoi.translate(-1.5,12,5);
 var mallojoi =new THREE.Mesh( ojoi, material2);
 
 
 var ojod=new THREE.SphereGeometry(0.75,32,32);
-ojod.translate(1.5,12,10);
+ojod.translate(1.5,12,5);
 var mallojod =new THREE.Mesh( ojod, material2);
 
 
@@ -45,11 +45,11 @@ var mallojos =new THREE.Mesh( ojos, material2);
 
 var forma = new THREE.Geometry();
 
-forma.vertices.push( new THREE.Vector3( 1,  9,  10 ) ); // Vértice 0
-forma.vertices.push( new THREE.Vector3( 1,  10.5, 10 ) ); // Vértice 1
-forma.vertices.push( new THREE.Vector3(-1,  10.5, 10 ) ); // Vértice 2
-forma.vertices.push( new THREE.Vector3(-1,  9,  10 ) ); // Vértice 3
-forma.vertices.push( new THREE.Vector3( 0,  9.75,  12.5 ) ); // Vértice 
+forma.vertices.push( new THREE.Vector3( 1,  9,  5 ) ); // Vértice 0
+forma.vertices.push( new THREE.Vector3( 1,  10.5, 5 ) ); // Vértice 1
+forma.vertices.push( new THREE.Vector3(-1,  10.5, 5 ) ); // Vértice 2
+forma.vertices.push( new THREE.Vector3(-1,  9,  5 ) ); // Vértice 3
+forma.vertices.push( new THREE.Vector3( 0,  9.75,  7.5 ) ); // Vértice 
 
 
 forma.faces.push( new THREE.Face3( 3, 2, 1 ) ); // Cara 0
