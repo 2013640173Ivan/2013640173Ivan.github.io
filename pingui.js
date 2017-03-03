@@ -21,8 +21,19 @@ var sphere = new THREE.Mesh( geometry, material );
 sphere.position.set(0,12,0)
 
 
+
+var ojoi=new THREE.SphereGeometry(1,32,32);
+ojoi.translate(-2.5,9,9);
+var mallojoi =new THREE.Mesh( ojoi, material);
+
+
+var ojod=new THREE.SphereGeometry(1,32,32);
+ojod.translate(2.5,9,9);
+var mallojod =new THREE.Mesh( ojod, material);
+
+
 var escena = new THREE.Scene();
-escena.add(Ovo,sphere);
+escena.add(Ovo,sphere,mallojod,mallojoi);
 
 
 var camara = new THREE.PerspectiveCamera();
