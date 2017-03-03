@@ -22,11 +22,11 @@ var mallojod =new THREE.Mesh( ojod, material);
 
 
 var figura = new THREE.Shape();
-figura.moveTo(5, -4);
-figura.lineTo(5.2, -4);
-figura.lineTo(5.2, -4.05);
-figura.lineTo(5, -4.05);
-figura.lineTo(5, -4);
+figura.moveTo(6, -5);
+figura.lineTo(6.2, -5);
+figura.lineTo(6.2, -5.05);
+figura.lineTo(6, -5.05);
+figura.lineTo(6, -5);
 var pied = new THREE.ExtrudeGeometry( figura,
                                        {amount: .75} );
 
