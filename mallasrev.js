@@ -28,9 +28,10 @@ var mallojoi =new THREE.Mesh( ojoi, material);
 
 var hongoForma = new THREE.Geometry();
 
+hongoForma.merge(mallojoi.geometry, mallojoi.matrix);
 hongoForma.merge(mallacabeza.geometry, mallacabeza.matrix);
 hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
-hongoForma.merge(mallojoi.geometry, mallojoi.matrix);
+
 
 
 var material2 = new THREE.MeshNormalMaterial();
