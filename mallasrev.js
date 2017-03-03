@@ -23,8 +23,8 @@ var troncoMalla = new THREE.Mesh(troncoForma);
 
 var hongoForma = new THREE.Geometry();
 
-hongolForma.merge(troncoMalla.geometry, troncoMalla.matrix);
-hongolForma.merge(malla.geometry, malla.matrix);
+hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
+hongoForma.merge(malla.geometry, malla.matrix);
 
 
 var material = new THREE.MeshNormalMaterial();
