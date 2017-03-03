@@ -2,12 +2,12 @@ var geometry = new THREE.SphereGeometry( 8, 60, 60, Math.PI, Math.PI*2, 3*Math.P
 var material = new THREE.MeshBasicMaterial( { color: 0xddddff } );
 var sphere = new THREE.Mesh( geometry, material );
 //scene.add( sphere );
-sphere.position.set(0,5,0);
+sphere.position.set(0,10,0);
 
 
 var troncoForma = new THREE.CylinderGeometry(3, 6, 10);
 var troncoMalla = new THREE.Mesh(troncoForma);
-troncoMalla.position.set(0, -7, 0);
+troncoMalla.position.set(0, -10, 0);
 
 var ojoi=new THREE.SphereGeometry(1.5,32,32);
 ojoi.translate(-2,2,8);
