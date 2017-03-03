@@ -11,7 +11,7 @@ var troncoMalla = new THREE.Mesh(troncoForma);
 troncoMalla.position.set(0, 0, 0);
 
 var ojoi=new THREE.SphereGeometry(1.5,32,32);
-ojoi.translate(-2,7,6);
+ojoi.translate(-2,7,7);
 var mallojoi =new THREE.Mesh( ojoi, material);
 
 var hongoForma = new THREE.Geometry();
