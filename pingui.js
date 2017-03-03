@@ -29,17 +29,17 @@ Ovo.position.set(0, 0, 0);
 
 
 var ojoi=new THREE.SphereGeometry(0.75,32,32);
-ojoi.translate(-1.5,12,7);
+ojoi.translate(-1.5,12,10);
 var mallojoi =new THREE.Mesh( ojoi, material2);
 
 
 var ojod=new THREE.SphereGeometry(0.75,32,32);
-ojod.translate(1.5,12,7);
+ojod.translate(1.5,12,10);
 var mallojod =new THREE.Mesh( ojod, material2);
 
 
-var ojos=new THREE.SphereGeometry(3,32,32);
-ojos.translate(0,10,0);
+var ojos=new THREE.SphereGeometry(6,32,32);
+ojos.translate(0,12,0);
 var mallojos =new THREE.Mesh( ojos, material2);
 
 
