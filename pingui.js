@@ -41,7 +41,7 @@ pingui.merge(mallojod.geometry, mallojod.matrix);
 pingui.merge(mallojoi.geometry, mallojoi.matrix);
 
 
-var mallapingui = new THREE.Mesh(bomba, material);
+var mallapingui = new THREE.Mesh(pingui, material);
 //mallabomba.rotateY( Math.PI/4 );
 var escena = new THREE.Scene();
 escena.add(mallapingui);
