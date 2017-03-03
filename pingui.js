@@ -12,4 +12,4 @@ var geometry = new THREE.LatheGeometry( points, 30 );
 var material = new THREE.MeshPhongMaterial( { color: 0xFFFF20 } );
 Ovo = new THREE.Mesh( geometry, material );
 Ovo.position.set(0, 20.1, 0);
-scene.add( Ovo );
+escena.add( Ovo );
