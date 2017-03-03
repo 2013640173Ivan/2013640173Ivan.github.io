@@ -2,7 +2,7 @@ var points = [];
 for ( var deg = 0; deg <= 180; deg += 6 ) {
 
     var rad = Math.PI * deg / 180;
-    var point = new THREE.Vector2( ( 10*0.72 + |0*.08 * Math.cos( rad ) ) * Math.sin( rad ), - 10*Math.cos( rad ) ); // the "egg equation"
+    var point = new THREE.Vector2( ( 10*0.72 + 10*.08 * Math.cos( rad ) ) * Math.sin( rad ), - 10*Math.cos( rad ) ); // the "egg equation"
     //console.log( point ); // x-coord should be greater than zero to avoid degenerate triangles; it is not in this formula.
     points.push( point );
 
