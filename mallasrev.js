@@ -15,7 +15,7 @@ var cabeza = new THREE.LatheBufferGeometry( points, 32 );
 var material = new THREE.MeshNormalMaterial();
 
 var mallacabeza = new THREE.Mesh( cabeza, material );
-mallacabeza.rotateY( Math.PI/6 );
+//mallacabeza.rotateY( Math.PI/6 );
 mallacabeza.position.set(0, 10, 0);
 
 var troncoForma = new THREE.CylinderGeometry(3, 6, 10);
@@ -28,9 +28,11 @@ var mallojoi =new THREE.Mesh( ojoi, material);
 
 var hongoForma = new THREE.Geometry();
 
-hongoForma.merge(mallojoi.geometry, mallojoi.matrix);
-hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
 hongoForma.merge(mallacabeza.geometry, mallacabeza.matrix);
+hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
+hongoForma.merge(mallojoi.geometry, mallojoi.matrix);
+
+
 
 
 
