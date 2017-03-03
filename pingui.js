@@ -45,6 +45,22 @@ forma.vertices.push( new THREE.Vector3(-0.5,  11, 10 ) ); // Vértice 2
 forma.vertices.push( new THREE.Vector3(-0.5,  10,  10 ) ); // Vértice 3
 forma.vertices.push( new THREE.Vector3( 0,  10.5,  11 ) ); // Vértice 
 
+
+forma.faces.push( new THREE.Face3( 3, 2, 1 ) ); // Cara 0
+forma.faces.push( new THREE.Face3( 3, 1, 0 ) ); // Cara 1
+forma.faces.push( new THREE.Face3( 3, 0, 4 ) ); // Cara 2
+forma.faces.push( new THREE.Face3( 0, 1, 4 ) ); // Cara 3
+forma.faces.push( new THREE.Face3( 1, 2, 4 ) ); // Cara 4
+forma.faces.push( new THREE.Face3( 2, 3, 4 ) ); // Cara 5
+
+forma.computeBoundingSphere();
+
+forma.computeFaceNormals();
+
+var material = new THREE.MeshNormalMaterial();
+
+var mallapic = new THREE.Mesh( forma, material );
+
 //var geometry = new THREE.ConeGeometry( 1.5, 5, 32 );
 //var material3 = new THREE.MeshBasicMaterial( {color: 0xffff00} );
 //var cone = new THREE.Mesh( geometry, material3 );
@@ -56,7 +72,7 @@ pingui.merge(Ovo.geometry, Ovo.matrix);
 pingui.merge(sphere.geometry, sphere.matrix);
 pingui.merge(mallojod.geometry, mallojod.matrix);
 pingui.merge(mallojoi.geometry, mallojoi.matrix);
-pingui.merge(cone.geometry, cone.matrix);
+pingui.merge(mallapic.geometry, mallapic.matrix);
 
 
 var mallapingui = new THREE.Mesh(pingui, material);
@@ -66,7 +82,7 @@ var escena = new THREE.Scene();
 
 
 //var escena = new THREE.Scene();
-escena.add(Ovo,sphere,mallojod,mallojoi,cone);
+escena.add(Ovo,sphere,mallojod,mallojoi,cone,mallapic);
 
 
 var camara = new THREE.PerspectiveCamera();
