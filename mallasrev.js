@@ -11,15 +11,27 @@ for ( var i = 0; i <= r0/2; i ++ ) {
 points.push( new THREE.Vector2( 0.0001, r0/2 ) );
 
 var geometry = new THREE.LatheBufferGeometry( points, 32 );
-//var forma = new THREE.LatheGeometry(figura);
 
 var material = new THREE.MeshNormalMaterial();
 
 var malla = new THREE.Mesh( geometry, material );
 malla.rotateY( Math.PI/6 );
+malla.position.set(0, 20. 0);
+
+var troncoForma = new THREE.CylinderGeometry(12, 8, 10);
+var troncoMalla = new THREE.Mesh(troncoForma);
+
+var hongoForma = new THREE.Geometry();
+
+hongolForma.merge(troncoMalla.geometry, troncoMalla.matrix);
+hongolForma.merge(malla.geometry, malla.matrix);
+
+
+var material = new THREE.MeshNormalMaterial();
+var hong = new THREE.Mesh(hongoForma, material);
 
 var escena = new THREE.Scene();
-escena.add(malla);
+escena.add(hong);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
