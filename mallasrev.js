@@ -21,17 +21,17 @@ mallacabeza.position.set(0, 20, 0);
 var troncoForma = new THREE.CylinderGeometry(12, 8, 10);
 var troncoMalla = new THREE.Mesh(troncoForma);
 
-var hongoForma = new THREE.Geometry();
+//var hongoForma = new THREE.Geometry();
 
-hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
-hongoForma.merge(mallacabeza.geometry, mallacabeza.matrix);
+//hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
+//hongoForma.merge(mallacabeza.geometry, mallacabeza.matrix);
 
 
-var material2 = new THREE.MeshNormalMaterial();
-var hong = new THREE.Mesh(hongoForma, material2);
+//var material2 = new THREE.MeshNormalMaterial();
+//var hong = new THREE.Mesh(hongoForma, material2);
 
 var escena = new THREE.Scene();
-escena.add(hong);
+escena.add(troncomalla,mallacabeza);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
