@@ -39,11 +39,11 @@ var mallojod =new THREE.Mesh( ojod, material);
 
 var forma = new THREE.Geometry();
 
-forma.vertices.push( new THREE.Vector3( 0.5,  10,  10 ) ); // Vértice 0
-forma.vertices.push( new THREE.Vector3( 0.5,  11, 10 ) ); // Vértice 1
-forma.vertices.push( new THREE.Vector3(-0.5,  11, 10 ) ); // Vértice 2
-forma.vertices.push( new THREE.Vector3(-0.5,  10,  10 ) ); // Vértice 3
-forma.vertices.push( new THREE.Vector3( 0,  10.5,  11 ) ); // Vértice 
+forma.vertices.push( new THREE.Vector3( 0.5,  9,  10 ) ); // Vértice 0
+forma.vertices.push( new THREE.Vector3( 0.5,  10, 10 ) ); // Vértice 1
+forma.vertices.push( new THREE.Vector3(-0.5,  10, 10 ) ); // Vértice 2
+forma.vertices.push( new THREE.Vector3(-0.5,  9,  10 ) ); // Vértice 3
+forma.vertices.push( new THREE.Vector3( 0,  9.5,  12 ) ); // Vértice 
 
 
 forma.faces.push( new THREE.Face3( 3, 2, 1 ) ); // Cara 0
