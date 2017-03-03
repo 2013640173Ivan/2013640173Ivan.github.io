@@ -24,7 +24,7 @@ Ovo.position.set(0, 0, 0);
 var geometry = new THREE.SphereGeometry( 5, 32, 32 );
 
 var sphere = new THREE.Mesh( geometry, material );
-sphere.position.set(0,5,0)
+sphere.translate(0,5,0);
 
 
 
