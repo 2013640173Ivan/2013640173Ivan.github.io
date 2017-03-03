@@ -10,13 +10,13 @@ for ( var i = 0; i <= r0/2; i ++ ) {
 }
 points.push( new THREE.Vector2( 0.0001, r0/2 ) );
 
-var geometry = new THREE.LatheBufferGeometry( points, 32 );
+var cabeza = new THREE.LatheBufferGeometry( points, 32 );
 
 var material = new THREE.MeshNormalMaterial();
 
-var malla = new THREE.Mesh( geometry, material );
-malla.rotateY( Math.PI/6 );
-malla.position.set(0, 20, 0);
+var mallacabeza = new THREE.Mesh( geometry, material );
+mallacabeza.rotateY( Math.PI/6 );
+mallacabeza.position.set(0, 20, 0);
 
 var troncoForma = new THREE.CylinderGeometry(12, 8, 10);
 var troncoMalla = new THREE.Mesh(troncoForma);
@@ -24,11 +24,11 @@ var troncoMalla = new THREE.Mesh(troncoForma);
 var hongoForma = new THREE.Geometry();
 
 hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
-hongoForma.merge(malla.geometry, malla.matrix);
+hongoForma.merge(mallacabeza.geometry, mallacabeza.matrix);
 
 
-var material = new THREE.MeshNormalMaterial();
-var hong = new THREE.Mesh(hongoForma, material);
+var material2 = new THREE.MeshNormalMaterial();
+var hong = new THREE.Mesh(hongoForma, material2);
 
 var escena = new THREE.Scene();
 escena.add(hong);
