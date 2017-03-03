@@ -104,11 +104,11 @@ var material3 = new THREE.MeshNormalMaterial();
 var mallapingui = new THREE.Mesh(pingui, material3);
 //mallapingui.rotateY( Math.PI/4 );
 var escena = new THREE.Scene();
-//escena.add(mallapingui);
+escena.add(mallapingui);
 
 
 //var escena = new THREE.Scene();
-escena.add(Ovo,sphere,mallojod,mallojoi,mallapic,mallapied,mallapiei);
+//escena.add(Ovo,sphere,mallojod,mallojoi,mallapic,mallapied,mallapiei);
 
 
 var camara = new THREE.PerspectiveCamera();
