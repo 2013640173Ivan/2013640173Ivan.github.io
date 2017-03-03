@@ -23,12 +23,12 @@ sphere.position.set(0,12,0)
 
 
 var ojoi=new THREE.SphereGeometry(1,32,32);
-ojoi.translate(-2.5,9,9);
+ojoi.translate(-1.5,12,6);
 var mallojoi =new THREE.Mesh( ojoi, material);
 
 
 var ojod=new THREE.SphereGeometry(1,32,32);
-ojod.translate(2.5,9,9);
+ojod.translate(1.5,12,6);
 var mallojod =new THREE.Mesh( ojod, material);
 
 
