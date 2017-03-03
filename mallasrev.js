@@ -16,7 +16,7 @@ var mallojoi =new THREE.Mesh( ojoi, material);
 
 
 var ojod=new THREE.SphereGeometry(1,32,32);
-ojoi.translate(2,8,7);
+ojod.translate(2,8,7);
 var mallojod =new THREE.Mesh( ojod, material);
 
 var hongoForma = new THREE.Geometry();
