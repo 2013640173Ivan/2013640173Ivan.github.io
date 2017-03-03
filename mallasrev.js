@@ -34,11 +34,11 @@ var mallapied =new THREE.Mesh( pied, material);
 
 
 var figura2 = new THREE.Shape();
-figura2.moveTo(-7, -6);
-figura2.lineTo(-7.3, -6);
-figura2.lineTo(-7.3, -6.1);
-figura2.lineTo(-7, -6.1);
-figura2.lineTo(-7, -6);
+figura2.moveTo(-5, -4);
+figura2.lineTo(-5.2, -4);
+figura2.lineTo(-5.2, -4.05);
+figura2.lineTo(-5, -4.05);
+figura2.lineTo(-5, -4);
 var piei = new THREE.ExtrudeGeometry( figura2,
                                        {amount: 2} );
 
