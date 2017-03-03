@@ -31,7 +31,7 @@ var troncoMalla = new THREE.Mesh(troncoForma);
 //var hong = new THREE.Mesh(hongoForma, material2);
 
 var escena = new THREE.Scene();
-escena.add(troncomalla,mallacabeza);
+escena.add(troncoMalla,mallacabeza);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
