@@ -39,7 +39,7 @@ var material2 = new THREE.MeshNormalMaterial();
 var mallahongoForma = new THREE.Mesh(hongoForma, material2);
 
 var escena = new THREE.Scene();
-escena.add(mallahongoForma);
+escena.add(mallacabeza,troncoMalla,mallojoi);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
