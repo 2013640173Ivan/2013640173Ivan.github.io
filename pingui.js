@@ -21,9 +21,9 @@ Ovo.position.set(0, 0, 0);
 
 //escena.add(sphere,troncoMalla,mallojoi,mallojod,mallapied,mallapiei);
 
-var esfca = new THREE.SphereGeometry(2.5, 32, 32 );
-esfca.translate(0,5,0);
-var cabe = new THREE.Mesh( esfca, material );
+//var esfca = new THREE.SphereGeometry(2.5, 32, 32 );
+//esfca.translate(0,5,0);
+//var cabe = new THREE.Mesh( esfca, material );
 
 
 
@@ -36,6 +36,12 @@ var mallojoi =new THREE.Mesh( ojoi, material2);
 var ojod=new THREE.SphereGeometry(0.75,32,32);
 ojod.translate(1.5,12,10);
 var mallojod =new THREE.Mesh( ojod, material2);
+
+
+var ojos=new THREE.SphereGeometry(6,32,32);
+ojos.translate(0,5,0);
+var mallojos =new THREE.Mesh( ojos, material2);
+
 
 var forma = new THREE.Geometry();
 
@@ -108,7 +114,7 @@ var escena = new THREE.Scene();
 
 
 //var escena = new THREE.Scene();
-escena.add(Ovo,cabe);
+escena.add(Ovo,mallojos);
 
 
 var camara = new THREE.PerspectiveCamera();
