@@ -1,12 +1,12 @@
 var geometry = new THREE.SphereGeometry( 8, 60, 60, Math.PI, Math.PI*2, 3*Math.PI/2);
-geometry.translate(0,5,0)
+geometry.translate(0,10,0)
 var material = new THREE.MeshBasicMaterial( { color: 0xddddff } );
 var sphere = new THREE.Mesh( geometry, material );
 //scene.add( sphere );
 //sphere.position.set(0,10,0);
 
 
-var troncoForma = new THREE.CylinderGeometry(3, 6, 10);
+var troncoForma = new THREE.CylinderGeometry(3, 6, 12);
 var troncoMalla = new THREE.Mesh(troncoForma);
 troncoMalla.position.set(0, 0, 0);
 
@@ -40,7 +40,7 @@ figura2.lineTo(-5.2, -4.05);
 figura2.lineTo(-5, -4.05);
 figura2.lineTo(-5, -4);
 var piei = new THREE.ExtrudeGeometry( figura2,
-                                       {amount: 2} );
+                                       {amount: 0.75} );
 
 var mallapiei =new THREE.Mesh( piei, material);
 
