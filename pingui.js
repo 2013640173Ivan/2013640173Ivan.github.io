@@ -29,17 +29,17 @@ Ovo.position.set(0, 0, 0);
 
 
 var ojoi=new THREE.SphereGeometry(0.75,32,32);
-ojoi.translate(-1.5,12,10);
+ojoi.translate(-1.5,12,7);
 var mallojoi =new THREE.Mesh( ojoi, material2);
 
 
 var ojod=new THREE.SphereGeometry(0.75,32,32);
-ojod.translate(1.5,12,10);
+ojod.translate(1.5,12,7);
 var mallojod =new THREE.Mesh( ojod, material2);
 
 
-var ojos=new THREE.SphereGeometry(6,32,32);
-ojos.translate(0,5,0);
+var ojos=new THREE.SphereGeometry(3,32,32);
+ojos.translate(0,10,0);
 var mallojos =new THREE.Mesh( ojos, material2);
 
 
@@ -110,11 +110,11 @@ var material3 = new THREE.MeshNormalMaterial();
 var mallapingui = new THREE.Mesh(pingui, material3);
 //mallapingui.rotateY( Math.PI/4 );
 var escena = new THREE.Scene();
-//escena.add(mallapingui);
+escena.add(mallapingui);
 
 
 //var escena = new THREE.Scene();
-escena.add(Ovo,mallojos);
+//escena.add(Ovo,mallojos);
 
 
 var camara = new THREE.PerspectiveCamera();
