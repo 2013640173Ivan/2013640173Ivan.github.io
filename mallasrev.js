@@ -14,7 +14,7 @@ var cabeza = new THREE.LatheBufferGeometry( points, 32 );
 
 var material = new THREE.MeshNormalMaterial();
 
-var mallacabeza = new THREE.Mesh( geometry, material );
+var mallacabeza = new THREE.Mesh( cabeza, material );
 mallacabeza.rotateY( Math.PI/6 );
 mallacabeza.position.set(0, 20, 0);
 
