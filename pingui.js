@@ -15,7 +15,7 @@ Ovo.position.set(0, 0, 0);
 
 //escena.add(sphere,troncoMalla,mallojoi,mallojod,mallapied,mallapiei);
 
-var geometry = new THREE.SphereBufferGeometry( 5, 32, 32 );
+var geometry = new THREE.SphereGeometry( 5, 32, 32 );
 var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
 var sphere = new THREE.Mesh( geometry, material );
 sphere.position.set(0,12,0)
@@ -36,7 +36,7 @@ var mallojod =new THREE.Mesh( ojod, material);
 
 var pingui = new THREE.Geometry();
 //pingui.merge(Ovo.geometry, Ovo.matrix);
-//pingui.merge(sphere.geometry, sphere.matrix);
+pingui.merge(sphere.geometry, sphere.matrix);
 pingui.merge(mallojod.geometry, mallojod.matrix);
 pingui.merge(mallojoi.geometry, mallojoi.matrix);
 
