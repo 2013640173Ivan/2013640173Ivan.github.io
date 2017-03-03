@@ -39,7 +39,7 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 
 }
 
-var geometry = new THREE.LatheBufferGeometry( points, 32 );
+var geometry = new THREE.LatheBufferGeometry( points, 64 );
 //var forma = new THREE.LatheGeometry(figura);
 
 var material = new THREE.MeshNormalMaterial();
