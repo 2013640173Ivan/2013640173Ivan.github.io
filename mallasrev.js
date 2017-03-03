@@ -18,7 +18,7 @@
 //mallacabeza.rotateY( Math.PI/6 );
 //mallacabeza.position.set(0, 10, 0);
 
-var geometry = new THREE.SphereGeometry( 8, 32, 15, 1*Math.PI/2, 2*Math.PI, Math.PI, Math.PI);
+var geometry = new THREE.SphereGeometry( 8, 60, 60, Math.PI, Math.PI, 3*Math.PI/2);
 var material = new THREE.MeshBasicMaterial( { color: 0xddddff } );
 var sphere = new THREE.Mesh( geometry, material );
 //scene.add( sphere );
