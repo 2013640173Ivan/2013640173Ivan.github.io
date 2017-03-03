@@ -67,15 +67,41 @@ var mallapic = new THREE.Mesh( forma, material );
 //cone.position.set(0,10,5)
 
 
+var figura = new THREE.Shape();
+figura.moveTo(6, -7);
+figura.lineTo(6.2, -7);
+figura.lineTo(6.2, -7.05);
+figura.lineTo(6, -7.05);
+figura.lineTo(6, -7);
+var pied = new THREE.ExtrudeGeometry( figura,
+                                       {amount: .75} );
+
+var mallapied =new THREE.Mesh( pied, material);
+
+
+var figura2 = new THREE.Shape();
+figura2.moveTo(-6, -7);
+figura2.lineTo(-6.2, -7);
+figura2.lineTo(-6.2, -7.05);
+figura2.lineTo(-6, -7.05);
+figura2.lineTo(-6, -7);
+var piei = new THREE.ExtrudeGeometry( figura2,
+                                       {amount: 0.75} );
+
+var mallapiei =new THREE.Mesh( piei, material);
+
+
 var pingui = new THREE.Geometry();
 pingui.merge(Ovo.geometry, Ovo.matrix);
 pingui.merge(sphere.geometry, sphere.matrix);
 pingui.merge(mallojod.geometry, mallojod.matrix);
 pingui.merge(mallojoi.geometry, mallojoi.matrix);
 pingui.merge(mallapic.geometry, mallapic.matrix);
+pingui.merge(mallapiei.geometry, mallapiei.matrix);
+pingui.merge(mallapied.geometry, mallapied.matrix);
 
 
-var mallapingui = new THREE.Mesh(pingui, material);
+var mallapingui = new THREE.Mesh(pingui, material,mallapied,mallapiei);
 //mallabomba.rotateY( Math.PI/4 );
 var escena = new THREE.Scene();
 //escena.add(mallapingui);
