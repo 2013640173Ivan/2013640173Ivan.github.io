@@ -19,6 +19,31 @@ var ojod=new THREE.SphereGeometry(1,32,32);
 ojod.translate(2,8,7);
 var mallojod =new THREE.Mesh( ojod, material);
 
+
+
+var figura = new THREE.Shape();
+figura.moveTo(7, -6);
+figura.lineTo(7.3, -6);
+figura.lineTo(7.3, -6.1);
+figura.lineTo(7, -6.1);
+figura.lineTo(7, -6);
+var pied = new THREE.ExtrudeGeometry( figura,
+                                       {amount: 2} );
+
+var mallapied =new THREE.Mesh( pied, material);
+
+
+var figura2 = new THREE.Shape();
+figura2.moveTo(-7, -6);
+figura2.lineTo(-7.3, -6);
+figura2.lineTo(-7.3, -6.1);
+figura2.lineTo(-7, -6.1);
+figura2.lineTo(-7, -6);
+var piei = new THREE.ExtrudeGeometry( figura2,
+                                       {amount: 2} );
+
+var mallapiei =new THREE.Mesh( piei, material);
+
 var hongoForma = new THREE.Geometry();
 
 
@@ -26,6 +51,8 @@ hongoForma.merge(sphere.geometry, sphere.matrix);
 hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
 hongoForma.merge(mallojoi.geometry, mallojoi.matrix);
 hongoForma.merge(mallojod.geometry, mallojod.matrix);
+hongoForma.merge(mallapied.geometry, mallapied.matrix);
+hongoForma.merge(mallapiei.geometry, mallapiei.matrix);
 
 
 
