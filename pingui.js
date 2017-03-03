@@ -13,7 +13,7 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 geometry = new THREE.LatheGeometry( points, 32 );
 
 var material = new THREE.MeshBasicMaterial( {color: 0x09F7F3} );
-var material2 = new THREE.MeshBasicMaterial( {color: 0xF709EC} );
+
 
 
 var Ovo = new THREE.Mesh( geometry,material);
@@ -23,7 +23,7 @@ Ovo.position.set(0, 0, 0);
 
 var geometry = new THREE.SphereGeometry( 5, 32, 32 );
 
-var sphere = new THREE.Mesh( geometry, material2 );
+var sphere = new THREE.Mesh( geometry, material );
 sphere.position.set(0,12,0)
 
 
