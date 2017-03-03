@@ -16,7 +16,7 @@ var material = new THREE.MeshNormalMaterial();
 
 var malla = new THREE.Mesh( geometry, material );
 malla.rotateY( Math.PI/6 );
-malla.position.set(0, 20. 0);
+malla.position.set(0, 20, 0);
 
 var troncoForma = new THREE.CylinderGeometry(12, 8, 10);
 var troncoMalla = new THREE.Mesh(troncoForma);
