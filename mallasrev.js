@@ -26,18 +26,18 @@ var ojoi=new THREE.SphereGeometry(2,32,32);
 ojoi.translate(-2,2,8);
 var mallojoi =new THREE.Mesh( ojoi, material);
 
+var hongoForma = new THREE.Geometry();
 
-//var hongoForma = new THREE.Geometry();
+hongoForma.merge(mallacabeza.geometry, mallacabeza.matrix);
+hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
+hongoForma.merge(mallojoi.geometry, mallojoi.matrix);
 
-//hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
-//hongoForma.merge(mallacabeza.geometry, mallacabeza.matrix);
 
-
-//var material2 = new THREE.MeshNormalMaterial();
-//var hong = new THREE.Mesh(hongoForma, material2);
+var material2 = new THREE.MeshNormalMaterial();
+var mallahongoForma = new THREE.Mesh(hongoForma, material2);
 
 var escena = new THREE.Scene();
-escena.add(troncoMalla,mallacabeza,mallojoi);
+escena.add(mallahongoForma);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
