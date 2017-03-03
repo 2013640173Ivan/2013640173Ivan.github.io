@@ -21,9 +21,9 @@ Ovo.position.set(0, 0, 0);
 
 //escena.add(sphere,troncoMalla,mallojoi,mallojod,mallapied,mallapiei);
 
-var geometry = new THREE.SphereGeometry( 5, 32, 32 );
+var esfca = new THREE.SphereGeometry( 5, 32, 32 );
 
-var cabe = new THREE.Mesh( geometry, material );
+var cabe = new THREE.Mesh( esfca, material );
 cabe.translate(0,5,0);
 
 
