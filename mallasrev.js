@@ -1,4 +1,4 @@
-var geometry = new THREE.SphereGeometry( 8, 60, 60, Math.PI, Math.PI*2, 3*Math.PI/2);
+var geometry = new THREE.SphereGeometry( 10, 60, 60, Math.PI, Math.PI*2, 3*Math.PI/2);
 geometry.translate(0,10,0)
 var material = new THREE.MeshBasicMaterial( { color: 0xddddff } );
 var sphere = new THREE.Mesh( geometry, material );
