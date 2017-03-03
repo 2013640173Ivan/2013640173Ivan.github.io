@@ -20,7 +20,7 @@ mallacabeza.position.set(0, 10, 0);
 
 var troncoForma = new THREE.CylinderGeometry(3, 6, 10);
 var troncoMalla = new THREE.Mesh(troncoForma);
-troncoMalla.position.set(0, 0, 0);
+troncoMalla.position.set(0, -3, 0);
 
 //var hongoForma = new THREE.Geometry();
 
