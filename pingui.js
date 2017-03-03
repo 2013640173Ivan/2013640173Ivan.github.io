@@ -35,10 +35,10 @@ var mallojod =new THREE.Mesh( ojod, material);
 
 
 var pingui = new THREE.Geometry();
-bomba.merge(Ovo.geometry, Ovo.matrix);
-bomba.merge(sphere.geometry, sphere.matrix);
-bomba.merge(mallojod.geometry, mallojod.matrix);
-bomba.merge(mmallojoi.geometry, mallojoi.matrix);
+pingui.merge(Ovo.geometry, Ovo.matrix);
+pingui.merge(sphere.geometry, sphere.matrix);
+pingui.merge(mallojod.geometry, mallojod.matrix);
+pingui.merge(mmallojoi.geometry, mallojoi.matrix);
 
 
 var mallapingui = new THREE.Mesh(bomba, material);
