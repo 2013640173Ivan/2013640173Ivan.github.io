@@ -11,7 +11,7 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 geometry = new THREE.LatheBufferGeometry( points, 32 );
 
 Ovo = new THREE.Mesh( geometry);
-
+Ovo.position.set(0, 0, 0);
 var escena = new THREE.Scene();
 escena.add(Ovo);
 
