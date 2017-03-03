@@ -51,7 +51,7 @@ var escena = new THREE.Scene();
 
 
 //var escena = new THREE.Scene();
-escena.add(Ovo,sphere,mallojod,mallojoi);
+escena.add(Ovo,mallojod,mallojoi);
 
 
 var camara = new THREE.PerspectiveCamera();
