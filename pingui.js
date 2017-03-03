@@ -38,7 +38,7 @@ var pingui = new THREE.Geometry();
 //pingui.merge(Ovo.geometry, Ovo.matrix);
 //pingui.merge(sphere.geometry, sphere.matrix);
 pingui.merge(mallojod.geometry, mallojod.matrix);
-pingui.merge(mmallojoi.geometry, mallojoi.matrix);
+pingui.merge(mallojoi.geometry, mallojoi.matrix);
 
 
 var mallapingui = new THREE.Mesh(bomba, material);
