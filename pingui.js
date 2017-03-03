@@ -8,15 +8,17 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 
 }
 
+var material = new THREE.MeshBasicMaterial( {color: 0x09F7F3} );
+
 geometry = new THREE.LatheGeometry( points, 32 );
 
-var Ovo = new THREE.Mesh( geometry);
+var Ovo = new THREE.Mesh( geometry,material);
 Ovo.position.set(0, 0, 0);
 
 //escena.add(sphere,troncoMalla,mallojoi,mallojod,mallapied,mallapiei);
 
 var geometry = new THREE.SphereGeometry( 5, 32, 32 );
-var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+
 var sphere = new THREE.Mesh( geometry, material );
 sphere.position.set(0,12,0)
 
