@@ -21,10 +21,10 @@ Ovo.position.set(0, 0, 0);
 
 //escena.add(sphere,troncoMalla,mallojoi,mallojod,mallapied,mallapiei);
 
-var esfca = new THREE.SphereGeometry( 5, 32, 32 );
-
-var cabe = new THREE.Mesh( esfca, material );
+var esfca = new THREE.SphereGeometry(2.5, 32, 32 );
 cabe.translate(0,5,0);
+var cabe = new THREE.Mesh( esfca, material );
+
 
 
 
@@ -104,11 +104,11 @@ var material3 = new THREE.MeshNormalMaterial();
 var mallapingui = new THREE.Mesh(pingui, material3);
 //mallapingui.rotateY( Math.PI/4 );
 var escena = new THREE.Scene();
-//escena.add(mallapingui);
+escena.add(mallapingui);
 
 
 //var escena = new THREE.Scene();
-escena.add(Ovo,cabe,mallojod,mallojoi,mallapic,mallapied,mallapiei);
+//escena.add(Ovo,cabe,mallojod,mallojoi,mallapic,mallapied,mallapiei);
 
 
 var camara = new THREE.PerspectiveCamera();
