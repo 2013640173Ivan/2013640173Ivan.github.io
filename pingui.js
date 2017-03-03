@@ -18,7 +18,7 @@ Ovo.position.set(0, 0, 0);
 var geometry = new THREE.SphereBufferGeometry( 5, 32, 32 );
 var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
 var sphere = new THREE.Mesh( geometry, material );
-sphere.position.set(0,5,0)
+sphere.position.set(0,10,0)
 
 
 var escena = new THREE.Scene();
