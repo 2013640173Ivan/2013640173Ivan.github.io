@@ -24,7 +24,7 @@ var material = new THREE.MeshBasicMaterial( { color: 0x2980b9} );
 material.side = THREE.BackSide;
 
 var sphere = new THREE.Mesh( geometry, material );
-
+sphere.position.set(0,10,0);
 //scene.add( sphere );
 
 
