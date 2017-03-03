@@ -18,13 +18,9 @@
 //mallacabeza.rotateY( Math.PI/6 );
 //mallacabeza.position.set(0, 10, 0);
 
-var geometry = new THREE.SphereGeometry( 8,16,16, Math.PI/2, Math.PI*2, 0, Math.PI);
-
-var material = new THREE.MeshBasicMaterial( { color: 0x2980b9} );
-material.side = THREE.BackSide;
-
+var geometry = new THREE.SphereGeometry( 8, 32, 15, 1*Math.PI/2, 2*Math.PI, Math.PI, Math.PI);
+var material = new THREE.MeshBasicMaterial( { color: 0xddddff } );
 var sphere = new THREE.Mesh( geometry, material );
-sphere.position.set(0,10,0);
 //scene.add( sphere );
 
 
