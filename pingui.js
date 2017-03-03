@@ -69,8 +69,8 @@ var mallapic = new THREE.Mesh( forma, material );
 
 var figura = new THREE.Shape();
 figura.moveTo(6, -7);
-figura.lineTo(6.2, -7);
-figura.lineTo(6.2, -7.05);
+figura.lineTo(6.1, -7);
+figura.lineTo(6.1, -7.05);
 figura.lineTo(6, -7.05);
 figura.lineTo(6, -7);
 var pied = new THREE.ExtrudeGeometry( figura,
@@ -81,8 +81,8 @@ var mallapied =new THREE.Mesh( pied, material);
 
 var figura2 = new THREE.Shape();
 figura2.moveTo(-6, -7);
-figura2.lineTo(-6.2, -7);
-figura2.lineTo(-6.2, -7.05);
+figura2.lineTo(-6.1, -7);
+figura2.lineTo(-6.1, -7.05);
 figura2.lineTo(-6, -7.05);
 figura2.lineTo(-6, -7);
 var piei = new THREE.ExtrudeGeometry( figura2,
