@@ -22,6 +22,11 @@ var troncoForma = new THREE.CylinderGeometry(3, 6, 10);
 var troncoMalla = new THREE.Mesh(troncoForma);
 troncoMalla.position.set(0, -3, 0);
 
+var ojoi=new THREE.SphereGeometry(2,32,32);
+ojoi.translate(-2,2,8);
+var mallojoi =new THREE.Mesh( ojoi, material);
+
+
 //var hongoForma = new THREE.Geometry();
 
 //hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
@@ -32,7 +37,7 @@ troncoMalla.position.set(0, -3, 0);
 //var hong = new THREE.Mesh(hongoForma, material2);
 
 var escena = new THREE.Scene();
-escena.add(troncoMalla,mallacabeza);
+escena.add(troncoMalla,mallacabeza,mallojoi);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
