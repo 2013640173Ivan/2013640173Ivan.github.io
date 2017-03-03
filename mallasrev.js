@@ -5,27 +5,34 @@
 
 
 
-var x = 0, y = 0;
+//var x = 0, y = 0;
 
-var heartShape = new THREE.Shape();
+//var heartShape = new THREE.Shape();
 
-heartShape.moveTo( x + 5, y + 5 );
-heartShape.bezierCurveTo( x + 5, y + 5, x + 4, y, x, y );
-heartShape.bezierCurveTo( x - 6, y, x - 6, y + 7,x - 6, y + 7 );
-heartShape.bezierCurveTo( x - 6, y + 11, x - 3, y + 15.4, x + 5, y + 19 );
-heartShape.bezierCurveTo( x + 12, y + 15.4, x + 16, y + 11, x + 16, y + 7 );
-heartShape.bezierCurveTo( x + 16, y + 7, x + 16, y, x + 10, y );
-heartShape.bezierCurveTo( x + 7, y, x + 5, y + 5, x + 5, y + 5 );
+//heartShape.moveTo( x + 5, y + 5 );
+//heartShape.bezierCurveTo( x + 5, y + 5, x + 4, y, x, y );
+//heartShape.bezierCurveTo( x - 6, y, x - 6, y + 7,x - 6, y + 7 );
+//heartShape.bezierCurveTo( x - 6, y + 11, x - 3, y + 15.4, x + 5, y + 19 );
+//heartShape.bezierCurveTo( x + 12, y + 15.4, x + 16, y + 11, x + 16, y + 7 );
+//heartShape.bezierCurveTo( x + 16, y + 7, x + 16, y, x + 10, y );
+//heartShape.bezierCurveTo( x + 7, y, x + 5, y + 5, x + 5, y + 5 );
 
-var geometry = new THREE.LatheGeometry( heartShape );
+//var geometry = new THREE.LatheGeometry( heartShape );
 
 
-//var forma = new THREE.LatheGeometry(puntos);
+var figura = new THREE.Shape();
+
+figura.moveTo(10, 10);
+figura.lineTo(10, 40);
+figura.lineTo(40, 40);
+figura.lineTo(10, 10);
+
+var forma = new THREE.LatheGeometry(figura);
 
 var material = new THREE.MeshNormalMaterial();
 
-var malla = new THREE.Mesh( geometry, material );
-malla.rotateY( Math.PI/4 );
+var malla = new THREE.Mesh( forma, material );
+malla.rotateY( Math.PI/6 );
 
 var escena = new THREE.Scene();
 escena.add(malla);
