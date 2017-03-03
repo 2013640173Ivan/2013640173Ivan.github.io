@@ -1,7 +1,7 @@
 var troncoForma = new THREE.CylinderGeometry(1, 1, 75, 64);
 var points = [];
 for ( var i = 0; i < 10; i ++ ) {
-	points.push( new THREE.Vector2( Math.sin( i * 0.25 ) * 10 + 1.5, ( i - 5 ) * 3 ) );
+	points.push( new THREE.Vector2(- Math.sin( i * 0.3 ) * 10 + 1.5, ( i - 5 ) * 3 ) );
 }
 var esferaForma = new THREE.LatheGeometry( points, 36 );
 esferaForma.translate(1,35,1);
