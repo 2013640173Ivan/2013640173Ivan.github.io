@@ -30,7 +30,7 @@ var hongoForma = new THREE.Geometry();
 
 hongoForma.merge(mallojoi.geometry, mallojoi.matrix);
 hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
-//hongoForma.merge(mallacabeza.geometry, mallacabeza.matrix);
+hongoForma.merge(mallacabeza.geometry, mallacabeza.matrix);
 
 
 
@@ -39,7 +39,7 @@ var material2 = new THREE.MeshNormalMaterial();
 var mallahongoForma = new THREE.Mesh(hongoForma, material2);
 
 var escena = new THREE.Scene();
-escena.add(mallacabeza,troncoMalla,mallojoi);
+escena.add(mallahongoForma);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
