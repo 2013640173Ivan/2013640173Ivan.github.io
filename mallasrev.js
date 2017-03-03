@@ -38,8 +38,8 @@
   //  points.push( point );
 
 //}
-var r0 = 40
-var r1 = r0/4;
+var r0 = 4
+var r1 = r0/.4;
 var inc = Math.PI/r0;
 points = [];
 points.push( new THREE.Vector2( 0.0001, -r0/2 ) );
