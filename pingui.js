@@ -37,10 +37,18 @@ var ojod=new THREE.SphereGeometry(1,32,32);
 ojod.translate(1.5,12,10);
 var mallojod =new THREE.Mesh( ojod, material);
 
-var geometry = new THREE.ConeGeometry( 1.5, 5, 32 );
-var material3 = new THREE.MeshBasicMaterial( {color: 0xffff00} );
-var cone = new THREE.Mesh( geometry, material3 );
-cone.position.set(0,10,5)
+var forma = new THREE.Geometry();
+
+forma.vertices.push( new THREE.Vector3( 0.5,  10,  10 ) ); // Vértice 0
+forma.vertices.push( new THREE.Vector3( 0.5,  11, 10 ) ); // Vértice 1
+forma.vertices.push( new THREE.Vector3(-0.5,  11, 10 ) ); // Vértice 2
+forma.vertices.push( new THREE.Vector3(-0.5,  10,  10 ) ); // Vértice 3
+forma.vertices.push( new THREE.Vector3( 0,  10.5,  11 ) ); // Vértice 
+
+//var geometry = new THREE.ConeGeometry( 1.5, 5, 32 );
+//var material3 = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+//var cone = new THREE.Mesh( geometry, material3 );
+//cone.position.set(0,10,5)
 
 
 var pingui = new THREE.Geometry();
