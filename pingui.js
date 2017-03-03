@@ -8,7 +8,7 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 
 }
 
-geometry = new THREE.LatheBufferGeometry( points, 32 );
+geometry = new THREE.LatheGeometry( points, 32 );
 
 var Ovo = new THREE.Mesh( geometry);
 Ovo.position.set(0, 0, 0);
@@ -35,7 +35,7 @@ var mallojod =new THREE.Mesh( ojod, material);
 
 
 var pingui = new THREE.Geometry();
-//pingui.merge(Ovo.geometry, Ovo.matrix);
+pingui.merge(Ovo.geometry, Ovo.matrix);
 pingui.merge(sphere.geometry, sphere.matrix);
 pingui.merge(mallojod.geometry, mallojod.matrix);
 pingui.merge(mallojoi.geometry, mallojoi.matrix);
@@ -44,11 +44,11 @@ pingui.merge(mallojoi.geometry, mallojoi.matrix);
 var mallapingui = new THREE.Mesh(pingui, material);
 //mallabomba.rotateY( Math.PI/4 );
 var escena = new THREE.Scene();
-//escena.add(mallapingui);
+escena.add(mallapingui);
 
 
 //var escena = new THREE.Scene();
-escena.add(Ovo,sphere,mallojod,mallojoi);
+//escena.add(Ovo,sphere,mallojod,mallojoi);
 
 
 var camara = new THREE.PerspectiveCamera();
