@@ -59,7 +59,7 @@ forma.computeFaceNormals();
 
 //var material = new THREE.MeshNormalMaterial();
 
-var mallapic = new THREE.Mesh( forma, material );
+var mallapic = new THREE.Mesh( forma, material2 );
 
 //var geometry = new THREE.ConeGeometry( 1.5, 5, 32 );
 //var material3 = new THREE.MeshBasicMaterial( {color: 0xffff00} );
