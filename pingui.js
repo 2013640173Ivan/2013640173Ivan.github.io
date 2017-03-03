@@ -8,10 +8,11 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 
 }
 
-var material = new THREE.MeshBasicMaterial( {color: 0x09F7F3} );
+
 
 geometry = new THREE.LatheGeometry( points, 32 );
 
+var material = new THREE.MeshBasicMaterial( {color: 0x09F7F3} );
 var Ovo = new THREE.Mesh( geometry,material);
 Ovo.position.set(0, 0, 0);
 
