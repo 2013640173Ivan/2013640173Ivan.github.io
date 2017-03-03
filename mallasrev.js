@@ -23,8 +23,8 @@ var mallojod =new THREE.Mesh( ojod, material);
 
 var figura = new THREE.Shape();
 figura.moveTo(5, -2);
-figura.lineTo(5, 3);
-figura.lineTo(12, 3);
+figura.lineTo(5, 1);
+figura.lineTo(7, 3);
 figura.lineTo(12, -2);
 figura.lineTo(5, -2);
 var pied = new THREE.ExtrudeGeometry( figura,
@@ -34,11 +34,11 @@ var mallapied =new THREE.Mesh( pied, material);
 
 
 var figura2 = new THREE.Shape();
-figura2.moveTo(-7, -6);
-figura2.lineTo(-7.3, -6);
-figura2.lineTo(-7.3, -6.1);
-figura2.lineTo(-7, -6.1);
-figura2.lineTo(-7, -6);
+figura2.moveTo(-3.5, -3);
+figura2.lineTo(-3.5, -3);
+figura2.lineTo(-3.5, -3);
+figura2.lineTo(-3.5, -3);
+figura2.lineTo(-3.5, -3);
 var piei = new THREE.ExtrudeGeometry( figura2,
                                        {amount: 2} );
 
