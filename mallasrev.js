@@ -11,12 +11,12 @@ var troncoMalla = new THREE.Mesh(troncoForma);
 troncoMalla.position.set(0, 2, 0);
 
 var ojoi=new THREE.SphereGeometry(1,32,32);
-ojoi.translate(-2.5,10,8);
+ojoi.translate(-2.5,10,9);
 var mallojoi =new THREE.Mesh( ojoi, material);
 
 
 var ojod=new THREE.SphereGeometry(1,32,32);
-ojod.translate(2.5,10,8);
+ojod.translate(2.5,10,9);
 var mallojod =new THREE.Mesh( ojod, material);
 
 
