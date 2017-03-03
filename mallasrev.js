@@ -30,7 +30,7 @@ var hongoForma = new THREE.Geometry();
 
 hongoForma.merge(mallojoi.geometry, mallojoi.matrix);
 hongoForma.merge(troncoMalla.geometry, troncoMalla.matrix);
-hongoForma.merge(mallacabeza.geometry, mallacabeza.matrix);
+//hongoForma.merge(mallacabeza.geometry, mallacabeza.matrix);
 
 
 
