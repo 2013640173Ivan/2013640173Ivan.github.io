@@ -97,6 +97,23 @@ var piei = new THREE.ExtrudeGeometry( figura2,
 var mallapiei =new THREE.Mesh( piei, material);
 
 
+
+var figura = new THREE.Shape();
+
+figura.moveTo(-160, -40);
+figura.lineTo(-185, -95);
+figura.lineTo(-120, -120);
+figura.lineTo(-160, -40);
+
+
+
+var forma = new THREE.ExtrudeGeometry( figura,
+                                       {amount: 10} );
+                                       
+                                var material = new THREE.MeshNormalMaterial();
+var malla = new THREE.Mesh( forma, material );
+
+
 var pingui = new THREE.Geometry();
 pingui.merge(Ovo.geometry, Ovo.matrix);
 pingui.merge(mallojos.geometry, mallojos.matrix);
