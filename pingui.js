@@ -99,7 +99,7 @@ var mallapiei =new THREE.Mesh( piei, material);
 
 var pingui = new THREE.Geometry();
 pingui.merge(Ovo.geometry, Ovo.matrix);
-pingui.merge(cabe.geometry, cabe.matrix);
+pingui.merge(mallojos.geometry, mallojos.matrix);
 pingui.merge(mallojod.geometry, mallojod.matrix);
 pingui.merge(mallojoi.geometry, mallojoi.matrix);
 pingui.merge(mallapic.geometry, mallapic.matrix);
