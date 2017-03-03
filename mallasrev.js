@@ -23,7 +23,7 @@ var mallojod =new THREE.Mesh( ojod, material);
 
 var figura = new THREE.Shape();
 figura.moveTo(7, -6);
-figura.lineTo(7.3, -6);
+figura.lineTo(7.3, -4);
 figura.lineTo(7.3, -6.1);
 figura.lineTo(7, -6.1);
 figura.lineTo(7, -6);
