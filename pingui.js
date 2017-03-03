@@ -12,4 +12,17 @@ var geometry = new THREE.LatheGeometry( points, 30 );
 var material = new THREE.MeshPhongMaterial( { color: 0xFFFF20 } );
 Ovo = new THREE.Mesh( geometry, material );
 Ovo.position.set(0, 20.1, 0);
-escena.add( Ovo );
+
+
+var escena = new THREE.Scene();
+escena.add(Ovo);
+
+//escena.add(sphere,troncoMalla,mallojoi,mallojod,mallapied,mallapiei);
+
+var camara = new THREE.PerspectiveCamera();
+camara.position.z = 50;
+
+var renderizador = new THREE.WebGLRenderer();
+renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
+document.body.appendChild( renderizador.domElement );
+renderizador.render( escena, camara );
