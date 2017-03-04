@@ -17,8 +17,21 @@ var material2 = new THREE.MeshBasicMaterial( {color: 0xF90AEE} );
 var Ovo = new THREE.Mesh( geometry,material2);
 Ovo.position.set(0, 0, 0);
 
+
+
+
+var ojoi=new THREE.SphereGeometry(0.75,32,32);
+ojoi.translate(-1.5,12,5);
+var mallojoi =new THREE.Mesh( ojoi, material2);
+
+
+var ojod=new THREE.SphereGeometry(0.75,32,32);
+ojod.translate(1.5,12,5);
+var mallojod =new THREE.Mesh( ojod, material2);
+
+
 var escena = new THREE.Scene();
-escena.add(Ovo);
+escena.add(Ovo,mallaojoi,mallaojod);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
