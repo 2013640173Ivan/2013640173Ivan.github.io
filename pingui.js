@@ -114,7 +114,7 @@ figurala.lineTo(4,0);
 
 
 var formala = new THREE.ExtrudeGeometry( figurala,
-                                       {amount: .1} );
+                                       {amount: .01} );
                                        
                                 var materiala = new THREE.MeshNormalMaterial();
 var mallala = new THREE.Mesh( formala, materiala );
