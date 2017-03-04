@@ -13,7 +13,7 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 geometry = new THREE.LatheGeometry( points, 32 );
 
 var material2 = new THREE.MeshBasicMaterial( {color: 0xF90AEE} );
-
+var material = new THREE.MeshBasicMaterial( {color: 0x0E0AF9} );
 var Ovo = new THREE.Mesh( geometry,material2);
 Ovo.position.set(0, 0, 0);
 
@@ -21,13 +21,13 @@ Ovo.position.set(0, 0, 0);
 
 
 var ojoi=new THREE.SphereGeometry(0.75,32,32);
-ojoi.translate(-1.5,12,5);
-var mallojoi =new THREE.Mesh( ojoi, material2);
+ojoi.translate(-1.5,9,5);
+var mallojoi =new THREE.Mesh( ojoi, material);
 
 
 var ojod=new THREE.SphereGeometry(0.75,32,32);
-ojod.translate(1.5,12,5);
-var mallojod =new THREE.Mesh( ojod, material2);
+ojod.translate(1.5,9,5);
+var mallojod =new THREE.Mesh( ojod, material);
 
 
 var escena = new THREE.Scene();
