@@ -19,10 +19,27 @@ var forma = new THREE.ExtrudeGeometry( figura,
 var malla = new THREE.Mesh( forma, material );
 //malla.rotateY( -Math.PI/4 );
 
+var figurai = new THREE.Shape();
+
+figurai.moveTo(40,40);
+figurai.lineTo(150,60);
+figurai.lineTo(200,180);
+figurai.lineTo(35,45);
+figurai.lineTo(40,40);
+
+
+var formai = new THREE.ExtrudeGeometry( figura1,
+                                       {amount: 1} );
+                                       
+                                var material = new THREE.MeshNormalMaterial();
+var mallai = new THREE.Mesh( formai, material );
+
+
+
 
 
 var escena = new THREE.Scene();
-escena.add(sphere,malla);
+escena.add(sphere,malla,mallai);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 500;
