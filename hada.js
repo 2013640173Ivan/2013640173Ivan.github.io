@@ -28,7 +28,7 @@ figurai.lineTo(35,45);
 figurai.lineTo(40,40);
 
 
-var formai = new THREE.ExtrudeGeometry( figura1,
+var formai = new THREE.ExtrudeGeometry( figurai,
                                        {amount: 1} );
                                        
                                 var material = new THREE.MeshNormalMaterial();
