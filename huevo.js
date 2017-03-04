@@ -46,8 +46,8 @@ escena.add(mallahuevo);
 
 
 
-var escena = new THREE.Scene();
-escena.add(Ovo,mallojoi,mallojod);
+//var escena = new THREE.Scene();
+//escena.add(Ovo,mallojoi,mallojod);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
