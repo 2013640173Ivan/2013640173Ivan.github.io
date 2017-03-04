@@ -21,11 +21,11 @@ var malla = new THREE.Mesh( forma, material );
 
 var figurai = new THREE.Shape();
 
-figurai.moveTo(40,40);
-figurai.lineTo(150,60);
-figurai.lineTo(200,180);
-figurai.lineTo(35,45);
-figurai.lineTo(40,40);
+figurai.moveTo(-40,40);
+figurai.lineTo(-140,40);
+figurai.lineTo(-170,180);
+figurai.lineTo(-35,45);
+figurai.lineTo(-40,40);
 
 
 var formai = new THREE.ExtrudeGeometry( figurai,
