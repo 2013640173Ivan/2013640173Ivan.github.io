@@ -30,6 +30,22 @@ ojod.translate(1.5,7,7);
 var mallojod =new THREE.Mesh( ojod, material);
 
 
+
+var huevo = new THREE.Geometry();
+
+huevo.merge(Ovo.geometry, Ovo.matrix);
+huevo.merge(mallojoi.geometry, mallojoi.matrix);
+huevo.merge(mallojod.geometry, mallojod.matrix);
+
+
+var material3 = new THREE.MeshNormalMaterial();
+var mallahuevo = new THREE.Mesh(huevo, material3);
+mallahuevo.rotateY( Math.PI/8 );
+var escena = new THREE.Scene();
+escena.add(mallahuevo);
+
+
+
 var escena = new THREE.Scene();
 escena.add(Ovo,mallojoi,mallojod);
 
