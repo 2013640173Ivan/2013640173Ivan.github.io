@@ -37,9 +37,27 @@ var mallai = new THREE.Mesh( formai, material );
 
 
 
+var figuraiu = new THREE.Shape();
+
+figuraiu.moveTo(-40,40);
+figuraiu.lineTo(-140,40);
+figuraiu.lineTo(-170,180);
+figuraiu.lineTo(-35,45);
+figuraiu.lineTo(-40,40);
+
+
+var formaiu = new THREE.ExtrudeGeometry( figuraiu,
+                                       {amount: 1} );
+                                       
+                                var material = new THREE.MeshNormalMaterial();
+var mallaiu = new THREE.Mesh( formaiu, material );
+
+
+
+
 
 var escena = new THREE.Scene();
-escena.add(sphere,malla,mallai);
+escena.add(sphere,malla,mallai,mallaiu);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 500;
