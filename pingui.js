@@ -139,7 +139,7 @@ var escena = new THREE.Scene();
 
 
 //var escena = new THREE.Scene();
-escena.add(mallala);
+escena.add(mallala,Ovo);
 
 
 var camara = new THREE.PerspectiveCamera();
