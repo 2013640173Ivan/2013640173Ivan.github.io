@@ -118,7 +118,7 @@ var formala = new THREE.ExtrudeGeometry( figurala,
                                        
                                 var materiala = new THREE.MeshNormalMaterial();
 var mallala = new THREE.Mesh( formala, materiala );
-mallala.rotateY( Math.PI/4 );
+mallala.rotateY( -Math.PI/4 );
 
 
 var pingui = new THREE.Geometry();
