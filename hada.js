@@ -58,12 +58,12 @@ var mallaiu = new THREE.Mesh( formaiu, material );
 
 var figuraiue = new THREE.Shape();
 
-figuraiue.moveTo(-35,-45);
-figuraiue.lineTo(-25,-90);
-figuraiue.lineTo(-55,-75);
-figuraiue.lineTo(-75,-55);
-figuraiue.lineTo(-40,-40);
-figuraiue.lineTo(-35,-45);
+figuraiue.moveTo(35,-45);
+figuraiue.lineTo(25,-100);
+figuraiue.lineTo(65,-85);
+figuraiue.lineTo(70,-50);
+figuraiue.lineTo(45,-40);
+figuraiue.lineTo(35,-45);
 
 
 var formaiue = new THREE.ExtrudeGeometry( figuraiue,
