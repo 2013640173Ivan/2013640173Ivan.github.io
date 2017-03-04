@@ -21,12 +21,12 @@ Ovo.position.set(0, 0, 0);
 
 
 var ojoi=new THREE.SphereGeometry(0.75,32,32);
-ojoi.translate(-1.5,7,7);
+ojoi.translate(-1.5,7,5);
 var mallojoi =new THREE.Mesh( ojoi, material);
 
 
 var ojod=new THREE.SphereGeometry(0.75,32,32);
-ojod.translate(1.5,7,7);
+ojod.translate(1.5,7,5);
 var mallojod =new THREE.Mesh( ojod, material);
 
 
