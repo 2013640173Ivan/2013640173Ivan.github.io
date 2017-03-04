@@ -17,6 +17,8 @@ var material2 = new THREE.MeshBasicMaterial( {color: 0xF90AEE} );
 var Ovo = new THREE.Mesh( geometry,material2);
 Ovo.position.set(0, 0, 0);
 
+var escena = new THREE.Scene();
+escena.add(Ovo);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
