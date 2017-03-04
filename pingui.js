@@ -98,20 +98,27 @@ var mallapiei =new THREE.Mesh( piei, material);
 
 
 
-var figura = new THREE.Shape();
+var figurala = new THREE.Shape();
 
-figura.moveTo(-160, -40);
-figura.lineTo(-185, -95);
-figura.lineTo(-120, -120);
-figura.lineTo(-160, -40);
+figurala.moveTo(4,0);
+figurala.lineTo(4,4);
+figurala.lineTo(3,5);
+figurala.lineTo(-1,5);
+figurala.lineTo(-4,1.5);
+figurala.lineTo(-4,-5);
+figurala.lineTo(-5,-7);
+figurala.lineTo(0,-6);
+figurala.lineTo(3,-4.5);
+figurala.lineTo(4,-2.5);
+figurala.lineTo(4,0);
 
 
-
-var forma = new THREE.ExtrudeGeometry( figura,
+var formala = new THREE.ExtrudeGeometry( figurala,
                                        {amount: 10} );
                                        
-                                var material = new THREE.MeshNormalMaterial();
-var malla = new THREE.Mesh( forma, material );
+                                var materiala = new THREE.MeshNormalMaterial();
+var mallala = new THREE.Mesh( formala, materiala );
+mallala.rotateY( Math.PI/4 );
 
 
 var pingui = new THREE.Geometry();
@@ -122,16 +129,17 @@ pingui.merge(mallojoi.geometry, mallojoi.matrix);
 pingui.merge(mallapic.geometry, mallapic.matrix);
 pingui.merge(mallapiei.geometry, mallapiei.matrix);
 pingui.merge(mallapied.geometry, mallapied.matrix);
+pingui.merge(mallala.geometry,mallala.matrix);
 
 var material3 = new THREE.MeshNormalMaterial();
 var mallapingui = new THREE.Mesh(pingui, material3);
 mallapingui.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
-escena.add(mallapingui);
+//escena.add(mallapingui);
 
 
 //var escena = new THREE.Scene();
-//escena.add(Ovo,mallojos);
+escena.add(mallala);
 
 
 var camara = new THREE.PerspectiveCamera();
