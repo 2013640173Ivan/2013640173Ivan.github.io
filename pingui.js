@@ -106,7 +106,7 @@ pingui.merge(mallojoi.geometry, mallojoi.matrix);
 pingui.merge(mallapic.geometry, mallapic.matrix);
 pingui.merge(mallapiei.geometry, mallapiei.matrix);
 pingui.merge(mallapied.geometry, mallapied.matrix);
-pingui.merge(mallala.geometry,mallala.matrix);
+
 
 var material3 = new THREE.MeshNormalMaterial();
 var mallapingui = new THREE.Mesh(pingui, material3);
