@@ -100,17 +100,16 @@ var mallapiei =new THREE.Mesh( piei, material);
 
 var figurala = new THREE.Shape();
 
-figurala.moveTo(4,0);
-figurala.lineTo(4,4);
-figurala.lineTo(3,5);
-figurala.lineTo(-1,5);
-figurala.lineTo(-4,1.5);
-figurala.lineTo(-4,-5);
-figurala.lineTo(-5,-7);
-figurala.lineTo(0,-6);
-figurala.lineTo(3,-4.5);
-figurala.lineTo(4,-2.5);
-figurala.lineTo(4,0);
+figurala.moveTo(2.5,0);
+figurala.lineTo(2,3.5);
+figurala.lineTo(-0.5,3.5);
+figurala.lineTo(-2.5,1);
+figurala.lineTo(-2.5,-7);
+figurala.lineTo(-3,-8);
+figurala.lineTo(0,-7);
+figurala.lineTo(2.5,-2.5);
+figurala.lineTo(2.5,0);
+
 
 
 var formala = new THREE.ExtrudeGeometry( figurala,
