@@ -98,28 +98,6 @@ var mallapiei =new THREE.Mesh( piei, material);
 
 
 
-var figurala = new THREE.Shape();
-
-figurala.moveTo(2.5,0);
-figurala.lineTo(2,3.5);
-figurala.lineTo(-0.5,3.5);
-figurala.lineTo(-2.5,1);
-figurala.lineTo(-2.5,-7);
-figurala.lineTo(-3,-8);
-figurala.lineTo(0,-7);
-figurala.lineTo(2.5,-2.5);
-figurala.lineTo(2.5,0);
-
-
-
-var formala = new THREE.ExtrudeGeometry( figurala,
-                                       {amount: -.01} );
-                                       
-                                var materiala = new THREE.MeshNormalMaterial();
-var mallala = new THREE.Mesh( formala, materiala );
-mallala.rotateY( -Math.PI/2 );
-
-
 var pingui = new THREE.Geometry();
 pingui.merge(Ovo.geometry, Ovo.matrix);
 pingui.merge(mallojos.geometry, mallojos.matrix);
@@ -134,11 +112,11 @@ var material3 = new THREE.MeshNormalMaterial();
 var mallapingui = new THREE.Mesh(pingui, material3);
 mallapingui.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
-//escena.add(mallapingui);
+escena.add(mallapingui);
 
 
 //var escena = new THREE.Scene();
-escena.add(mallala,Ovo);
+//escena.add(mallala,Ovo);
 
 
 var camara = new THREE.PerspectiveCamera();
