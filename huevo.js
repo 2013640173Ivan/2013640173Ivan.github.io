@@ -12,9 +12,16 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 
 geometry = new THREE.LatheGeometry( points, 32 );
 
-var material = new THREE.MeshBasicMaterial( {color: 0x09F7F3} );
-
 var material2 = new THREE.MeshBasicMaterial( {color: 0xF90AEE} );
 
-var Ovo = new THREE.Mesh( geometry,material);
+var Ovo = new THREE.Mesh( geometry,material2);
 Ovo.position.set(0, 0, 0);
+
+
+var camara = new THREE.PerspectiveCamera();
+camara.position.z = 50;
+
+var renderizador = new THREE.WebGLRenderer();
+renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
+document.body.appendChild( renderizador.domElement );
+renderizador.render( escena, camara );
