@@ -31,7 +31,7 @@ var mallojod =new THREE.Mesh( ojod, material2);
 
 
 var escena = new THREE.Scene();
-escena.add(Ovo,mallaojoi,mallaojod);
+escena.add(Ovo,mallojoi,mallojod);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 50;
