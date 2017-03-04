@@ -13,7 +13,7 @@ figura.lineTo(40,40);
 
 
 var forma = new THREE.ExtrudeGeometry( figura,
-                                       {amount: 10} );
+                                       {amount: 1} );
                                        
                                 var material = new THREE.MeshNormalMaterial();
 var malla = new THREE.Mesh( forma, material );
