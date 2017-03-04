@@ -74,9 +74,26 @@ var mallaiue = new THREE.Mesh( formaiue, material );
 
 
 
+var hada = new THREE.Geometry();
+hada.merge(sphere.geometry, sphere.matrix);
+hada.merge(malla.geometry, malla.matrix);
+hada.merge(mallai.geometry, mallai.matrix);
+hada.merge(mallaiu.geometry, mallaiu.matrix);
+hada.merge(mallaiue.geometry, mallaiue.matrix);
 
+
+
+var material3 = new THREE.MeshNormalMaterial();
+var mallahada = new THREE.Mesh(hada, material3);
+mallahada.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
-escena.add(sphere,malla,mallai,mallaiu,mallaiue );
+escena.add(mallahada);
+
+
+
+
+//var escena = new THREE.Scene();
+//escena.add(sphere,malla,mallai,mallaiu,mallaiue );
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 500;
