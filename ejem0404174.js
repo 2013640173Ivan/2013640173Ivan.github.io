@@ -1,6 +1,6 @@
 function setup(){
 var forma = new THREE.BoxGeometry(1, 1, 1);
-var material = new THREE.PhongMaterial({color: '#00cc00'});
+var material = new THREE.MeshPhongMaterial({color: '#00cc00'});
   malla = new THREE.Mesh(forma, material);
   
   var luzPuntual = new THREE.PointLight(0xFFFFFF);
