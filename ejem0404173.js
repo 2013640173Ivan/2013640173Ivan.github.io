@@ -1,5 +1,5 @@
 function setup(){
-var forma = new THREE.BoxGeometry(100, 100, 500);
+var forma = new THREE.BoxGeometry(1, 1, 1);
 var material = new THREE.MeshLambertMaterial({color: '#ffffff'});
 malla = new THREE.Mesh(forma, material);
 
@@ -16,7 +16,7 @@ escena.add(malla);
   
 
 camara = new THREE.PerspectiveCamera();
-camara.position.z = 755;
+camara.position.z = 5;
 
 renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerHeight*.95, window.innerHeight*.95);
