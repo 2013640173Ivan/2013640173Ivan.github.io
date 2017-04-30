@@ -2,7 +2,7 @@ var iluminacion = new THREE.PointLight(0xFFFFFF);
 iluminacion.position.y=20;
 
 var forma = new THREE.SphereGeometry(1);
-var material = new THREE.MeshLambertMaterial({color: "#00c00"});
+var material = new THREE.MeshLambertMaterial({color: "#33F6FF"});
 var malla = new THREE.Mesh( forma, material);
 
 malla.position.y=2;
