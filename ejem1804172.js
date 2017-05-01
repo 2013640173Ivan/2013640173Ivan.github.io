@@ -1,5 +1,6 @@
 var iluminacion = new THREE.PointLight(0x33F3FF);
 iluminacion.position.y=20;
+iluminacion.position.x=20;
 
 var forma = new THREE.SphereGeometry(1);
 var material = new THREE.MeshLambertMaterial({color: "#33F6FF"});
