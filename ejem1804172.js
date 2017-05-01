@@ -1,4 +1,4 @@
-var iluminacion = new THREE.PointLight(0x33F3FF);
+var iluminacion = new THREE.PointLight(0xF932D2);
 iluminacion.position.y=20;
 iluminacion.position.x=20;
 
@@ -29,6 +29,6 @@ renderizador.shadowMapEnabled = true;
 malla.castShadow = true;
 base.receiveShadow = true;
 //iluminacion.shadowcameravisible = true;
-//iluminacion.castShadow = true;
+iluminacion.castShadow = true;
 
 renderizador.render(escena, camara);
