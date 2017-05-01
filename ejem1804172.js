@@ -26,7 +26,7 @@ document.body.appendChild( renderizador.domElement );
 
 
 renderizador.shadowMapEnabled = true;
-malla.castShadow = true;
+malla.castShadow = false;
 base.receiveShadow = true;
 //iluminacion.shadowcameravisible = true;
 iluminacion.castShadow = true;
