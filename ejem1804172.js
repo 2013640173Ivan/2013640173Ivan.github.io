@@ -1,8 +1,8 @@
-var iluminacion = new THREE.AmbientLight(0xFFFF33);
+var iluminacion = new THREE.PointLight(0xFFFF33);
 iluminacion.position.y=20;
 
 var forma = new THREE.SphereGeometry(1);
-var material = new THREE.MeshLambertMaterial({color: "#33F6FF"});
+var material = new THREE.MeshPhongMaterial({color: "#33F6FF"});
 var malla = new THREE.Mesh( forma, material);
 
 malla.position.y=2;
