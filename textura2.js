@@ -28,6 +28,3 @@ renderer.render(escena, camara);
 var camara, escena, renderer, malla;
 setup()
 loop();
-
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Securi
