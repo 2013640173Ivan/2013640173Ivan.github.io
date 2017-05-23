@@ -38,7 +38,7 @@ cubo2 = new THREE.Mesh ( new THREE.BoxGeometry(1,1,1),
 function loop(){
   
   obstaculo1 = raycaster1.intersectObject(cubo1);
-   obstaculo1 = raycaster2.intersectObject(cubo2);
+   obstaculo2 = raycaster2.intersectObject(cubo2);
   
   if((obstaculo1.length > 0 && (obstaculo1[0].distance <= 0.5)) || 
      (obstaculo2.length > 0 && (obstaculo2[0].distance <= 0.5)))
