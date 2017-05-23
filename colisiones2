@@ -1,0 +1,3 @@
+function setup() {
+
+cubo1 = new THREE.Mesh
