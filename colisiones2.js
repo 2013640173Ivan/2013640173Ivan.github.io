@@ -23,7 +23,7 @@ cubo2 = new THREE.Mesh ( new THREE.BoxGeometry(1,1,1),
       renderer = new THREE.WebGLRenderer();
       renderer.setSize(window.innerHeight*.95,
                        window.innerHeight*.95);
-                       document.boddy.appendChild(renderer.domElement);
+                       document.body.appendChild(renderer.domElement);
                        
                        step = 0.01;
                        
