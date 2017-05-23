@@ -12,7 +12,7 @@ cubo2 = new THREE.Mesh ( new THREE.BoxGeometry(1,1,1),
     camara.position.z = 5;
     
     
-    raycaster = new THREE,Raycaster();
+    raycaster = new THREE.Raycaster();
     raycaster.setFromCamera( new THREE.Vector2(0,0), camara);
     
     escena = new THREE.Scene();
