@@ -29,8 +29,21 @@ cubo 2 = new THREE.Mesh ( new THREE.BoxGeometr(1,1,1),new
                            var step = 0.01;
                            
                            
-                           cubo.rotation.x += step; 
-                           cubo.rotation.y += step;
+                           cubo1.rotation.x += step; 
+                           cubo1.rotation.y += step;
+                        
+                         cubo2.rotation.x += step; 
+                          cubo2.rotation.y += step;
+                        
+                     renderer.render(escena, camara);
+                     requestAnimationFrame(loop);
+                      }
+
+        var cubo1, cubo2, escena, camara, renderer;
+
+setup();
+loop();
+
                            
                            
     
