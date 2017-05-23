@@ -34,12 +34,12 @@ cubo2 = new THREE.Mesh ( new THREE.BoxGeometry(1,1,1),
                        var intersects = raycaster.intersectObjects(escena.children);
                        if (intersects.lenght > 0) step = -step;
                        
-                         cubo1.position.x = step;
-                         cubo1.position.y = step;
+                         cubo1.rotation.x = step;
+                         cubo1.rotation.y = step;
                          
                          
-                          cubo2.position.x = step;
-                         cubo2.position.y = step;
+                          cubo2.rotation.x = step;
+                         cubo2.rotation.y = step;
                          
                          
                          
