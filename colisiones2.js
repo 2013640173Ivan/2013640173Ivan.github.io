@@ -29,7 +29,7 @@ cubo2 = new THREE.Mesh ( new THREE.BoxGeometry(1,1,1),
                        
                        }
                        
-                       function loop()
+                       function loop(){
                        
                        var intersects = raycaster.intersectObjects(escena.children);
                        if (intersects.lenght > 0) step = -step;
