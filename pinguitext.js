@@ -31,8 +31,8 @@ renderizador.render( escena, camara );
 function loop() {
 requestAnimationFrame(loop);
 
-Ovo.rotation.x += 0.1;
-Ovo.rotation.y += 0.1;
+Ovo.rotation.x += 0.01;
+Ovo.rotation.y += 0.01;
 
 renderer.render(escena, camara);
 }
