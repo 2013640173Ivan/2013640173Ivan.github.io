@@ -34,15 +34,8 @@ document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
 }
 
-function loop() {
-requestAnimationFrame(loop);
 
-Ovo.rotation.x += 0.01;
-Ovo.rotation.y += 0.01;
-
-renderizador.render(escena, camara);
-}
 var camara, escena, renderizador, Ovo;
 
 setup()
-loop();
+
