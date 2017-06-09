@@ -1,3 +1,9 @@
+
+function setup (){
+THREE.ImageUtils.crossOrigin = '';
+var textura =THREE.ImageUtils.loadTexture('crate.gif');
+var material = new THREE.MeshBasicMaterial({map: textura});
+
 var points = [];
 for ( var deg = 0; deg <= 180; deg += 6 ) {
     var rad = Math.PI * deg / 180;
@@ -7,7 +13,6 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 }
 
 geometry = new THREE.LatheGeometry( points, 32 );
-var material = new THREE.MeshNormalMaterial();
 var Ovo = new THREE.Mesh( geometry,material);
 Ovo.position.set(0, 0, 0);
 
@@ -27,6 +32,7 @@ var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
+}
 
 function loop() {
 requestAnimationFrame(loop);
@@ -38,4 +44,5 @@ renderizador.render(escena, camara);
 }
 var camara, escena, renderizador, Ovo;
 
+setup()
 loop();
