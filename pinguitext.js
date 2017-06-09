@@ -9,3 +9,21 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 geometry = new THREE.LatheGeometry( points, 32 );
 var Ovo = new THREE.Mesh( geometry,material);
 Ovo.position.set(0, 0, 0);
+
+
+
+var material3 = new THREE.MeshNormalMaterial();
+var mallapingui = new THREE.Mesh(Ovo, material3);
+mallapingui.rotateY( Math.PI/8 );
+var escena = new THREE.Scene();
+escena.add(mallapingui);
+
+
+
+var camara = new THREE.PerspectiveCamera();
+camara.position.z = 50;
+
+var renderizador = new THREE.WebGLRenderer();
+renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
+document.body.appendChild( renderizador.domElement );
+renderizador.render( escena, camara );
