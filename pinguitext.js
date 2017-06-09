@@ -34,7 +34,7 @@ requestAnimationFrame(loop);
 Ovo.rotation.x += 0.01;
 Ovo.rotation.y += 0.01;
 
-rendererizador.render(escena, camara);
+renderizador.render(escena, camara);
 }
 var camara, escena, renderizador, Ovo;
 
