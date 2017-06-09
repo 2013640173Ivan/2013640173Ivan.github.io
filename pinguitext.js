@@ -27,3 +27,15 @@ var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
+
+function loop() {
+requestAnimationFrame(loop);
+
+Ovo.rotation.x += 0;
+Ovo.rotation.y += 0;
+
+renderer.render(escena, camara);
+}
+var camara, escena, renderer, Ovo;
+
+loop();
