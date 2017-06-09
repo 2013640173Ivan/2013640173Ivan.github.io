@@ -117,7 +117,7 @@ pingui.merge(mallapied.geometry, mallapied.matrix);
 
 
 
-var mallapingui = new THREE.Mesh(pingui, material)t;
+var mallapingui = new THREE.Mesh(pingui, materialt);
 mallapingui.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
 escena.add(mallapingui);
