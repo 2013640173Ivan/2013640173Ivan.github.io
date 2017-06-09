@@ -140,4 +140,4 @@ renderizador.render( escena, camara );
     
 var camara, escena, renderer, mallapingui;
 setup()
-loop();
+
