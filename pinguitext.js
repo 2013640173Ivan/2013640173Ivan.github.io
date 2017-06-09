@@ -36,6 +36,6 @@ Ovo.rotation.y += 0.01;
 
 rendererizador.render(escena, camara);
 }
-var camara, escena, renderer, Ovo;
+var camara, escena, renderizador, Ovo;
 
 loop();
