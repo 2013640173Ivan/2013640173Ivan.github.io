@@ -7,6 +7,7 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 }
 
 geometry = new THREE.LatheGeometry( points, 32 );
+var material = new THREE.MeshNormalMaterial();
 var Ovo = new THREE.Mesh( geometry,material);
 Ovo.position.set(0, 0, 0);
 
