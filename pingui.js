@@ -1,9 +1,3 @@
-function setup (){
-THREE.ImageUtils.crossOrigin = '';
-var textura =THREE.ImageUtils.loadTexture('crate.gif');
-var matext = new THREE.MeshBasicMaterial({map: textura});
-
-
 var points = [];
 for ( var deg = 0; deg <= 180; deg += 6 ) {
 
@@ -22,7 +16,7 @@ var material = new THREE.MeshBasicMaterial( {color: 0x09F7F3} );
 
 var material2 = new THREE.MeshBasicMaterial( {color: 0xF90AEE} );
 
-var Ovo = new THREE.Mesh( geometry,matext);
+var Ovo = new THREE.Mesh( geometry,material);
 Ovo.position.set(0, 0, 0);
 
 //escena.add(sphere,troncoMalla,mallojoi,mallojod,mallapied,mallapiei);
@@ -36,17 +30,17 @@ Ovo.position.set(0, 0, 0);
 
 var ojoi=new THREE.SphereGeometry(0.75,32,32);
 ojoi.translate(-1.5,12,5);
-var mallojoi =new THREE.Mesh( ojoi, matext);
+var mallojoi =new THREE.Mesh( ojoi, material2);
 
 
 var ojod=new THREE.SphereGeometry(0.75,32,32);
 ojod.translate(1.5,12,5);
-var mallojod =new THREE.Mesh( ojod, matext);
+var mallojod =new THREE.Mesh( ojod, material2);
 
 
 var ojos=new THREE.SphereGeometry(5,32,32);
 ojos.translate(0,12,0);
-var mallojos =new THREE.Mesh( ojos, matext);
+var mallojos =new THREE.Mesh( ojos, material2);
 
 
 var forma = new THREE.Geometry();
@@ -71,7 +65,7 @@ forma.computeFaceNormals();
 
 //var material = new THREE.MeshNormalMaterial();
 
-var mallapic = new THREE.Mesh( forma, matext );
+var mallapic = new THREE.Mesh( forma, material2 );
 
 //var geometry = new THREE.ConeGeometry( 1.5, 5, 32 );
 //var material3 = new THREE.MeshBasicMaterial( {color: 0xffff00} );
@@ -88,7 +82,7 @@ figura.lineTo(6, -7);
 var pied = new THREE.ExtrudeGeometry( figura,
                                        {amount: .75} );
 
-var mallapied =new THREE.Mesh( pied, matext);
+var mallapied =new THREE.Mesh( pied, material);
 
 
 var figura2 = new THREE.Shape();
@@ -100,7 +94,7 @@ figura2.lineTo(-6, -7);
 var piei = new THREE.ExtrudeGeometry( figura2,
                                        {amount: 0.75} );
 
-var mallapiei =new THREE.Mesh( piei, matext);
+var mallapiei =new THREE.Mesh( piei, material);
 
 
 
@@ -114,8 +108,8 @@ pingui.merge(mallapiei.geometry, mallapiei.matrix);
 pingui.merge(mallapied.geometry, mallapied.matrix);
 
 
-
-var mallapingui = new THREE.Mesh(pingui, matext);
+var material3 = new THREE.MeshNormalMaterial();
+var mallapingui = new THREE.Mesh(pingui, material3);
 mallapingui.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
 escena.add(mallapingui);
@@ -132,13 +126,8 @@ var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
-    
-    
-    
-    
-}
 
-/*function loop() 
+function loop() 
 {
 requestAnimationFrame(loop);
 
@@ -148,12 +137,12 @@ mallapingui.rotation.x += 0.01;
 mallapingui.rotation.y += 0.01;
 
 
-renderizador.render(escena, camara);
+renderer.render(escena, camara);
 
-}*/
+}
 
-var camara, escena, renderer, mallapingui;
+//var camara, escena, renderer, mallapingui;
 
+setup()
 
-setup();
-
+loop();
