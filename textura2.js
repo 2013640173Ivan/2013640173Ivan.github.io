@@ -27,6 +27,18 @@ ojos.translate(0,12,0);
   
   
   
+  
+  
+  var pingui = new THREE.Geometry();
+pingui.merge(forma.geometry, forma.matrix);
+pingui.merge(ojos.geometry, ojos.matrix);
+  
+  var mallapingui = new THREE.Mesh(pingui, material);
+//mallapingui.rotateY( Math.PI/8 );
+
+  
+  
+  
   var luzPuntual = new THREE.PointLight(0xFFFFFF);
   luzPuntual.position.x=50;
   luzPuntual.position.y=50;
@@ -36,7 +48,7 @@ ojos.translate(0,12,0);
 
 
 escena = new THREE.Scene();
-escena.add(malla,mallojos);
+escena.add(mallapingui);
   
   escena.add(luzPuntual);
 
