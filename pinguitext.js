@@ -48,5 +48,5 @@ rendererizador.render(escena, camara);
 
 var camara, escena, renderizador, Ovo;
 
-setup()
+
 loop();
