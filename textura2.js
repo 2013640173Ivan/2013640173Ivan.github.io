@@ -1,8 +1,8 @@
-//function setup (){
-//THREE.ImageUtils.crossOrigin = '';
+function setup (){
+THREE.ImageUtils.crossOrigin = '';
 //var textura =THREE.ImageUtils.loadTexture('2013640173Ivan.github.io/easter.jpg');
-  //var textura =THREE.ImageUtils.loadTexture('crate.gif');
-//var material = new THREE.MeshLambertMaterial({map: textura});
+  var textura =THREE.ImageUtils.loadTexture('crate.gif');
+var material = new THREE.MeshLambertMaterial({map: textura});
   var material2 = new THREE.MeshNormalMaterial();
   var points = [];
 for ( var deg = 0; deg <= 180; deg += 6 ) {
@@ -33,7 +33,7 @@ ojos.translate(0,12,0);
 pingui.merge(malla.geometry, malla.matrix);
 pingui.merge(mallojos.geometry, mallojos.matrix);
   
-  var mallapingui = new THREE.Mesh(pingui, material2);
+  var mallapingui = new THREE.Mesh(pingui, material);
 //mallapingui.rotateY( Math.PI/8 );
 
   
@@ -58,7 +58,7 @@ camara.position.z = 50;
 renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerHeight*.95, window.innerHeight*.95);
 document.body.appendChild(renderer.domElement);
-
+}
 
 
 function loop() {
