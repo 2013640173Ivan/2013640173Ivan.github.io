@@ -28,7 +28,7 @@ var pin = new THREE.Geometry();
 pin.merge(malla.geometry, malla.matrix);
 pin.merge(mallojoi.geometry, mallojoi.matrix);
 pin.translate(-52,10,70);
-var mallapin = new THREE.Mesh(bomba, material);
+var mallapin = new THREE.Mesh(pin, material);
 //mallabomba.rotateY( Math.PI/12 );
 //mallabomba.rotateZ( Math.PI/4 );
 escena.add(mallapin);
