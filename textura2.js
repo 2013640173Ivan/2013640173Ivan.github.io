@@ -3,7 +3,7 @@ THREE.ImageUtils.crossOrigin = '';
 var textura =THREE.ImageUtils.loadTexture('2013640173Ivan.github.io/easter.jpg');
   //var textura =THREE.ImageUtils.loadTexture('crate.gif');
 var material = new THREE.MeshLambertMaterial({map: textura});
-  
+  var material2 = new THREE.MeshNormalMaterial();
   var points = [];
 for ( var deg = 0; deg <= 180; deg += 6 ) {
     var rad = Math.PI * deg / 180;
@@ -15,7 +15,7 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
  var forma = new THREE.LatheGeometry( points, 32 );
   
 //var forma = new THREE.BoxGeometry(1,1,1);
-malla = new THREE.Mesh(forma, material);
+malla = new THREE.Mesh(forma, material2);
   
   
   
@@ -23,7 +23,7 @@ malla = new THREE.Mesh(forma, material);
   
 var ojos=new THREE.SphereGeometry(5,32,32);
 ojos.translate(0,12,0);
- mallojos =new THREE.Mesh( ojos, material);
+ mallojos =new THREE.Mesh( ojos, material2);
   
   
   
@@ -33,7 +33,7 @@ ojos.translate(0,12,0);
 pingui.merge(malla.geometry, malla.matrix);
 pingui.merge(mallojos.geometry, mallojos.matrix);
   
-  var mallapingui = new THREE.Mesh(pingui, material);
+  var mallapingui = new THREE.Mesh(pingui, material2);
 //mallapingui.rotateY( Math.PI/8 );
 
   
