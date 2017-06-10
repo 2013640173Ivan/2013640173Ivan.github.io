@@ -3,7 +3,7 @@ THREE.ImageUtils.crossOrigin = '';
 //var textura =THREE.ImageUtils.loadTexture('2013640173Ivan.github.io/easter.jpg');
   var textura =THREE.ImageUtils.loadTexture('crate.gif');
 var material = new THREE.MeshLambertMaterial({map: textura});
-  var material2 = new THREE.MeshNormalMaterial();
+  var material2 = new THREE.MeshLambertMaterial();
   var points = [];
 for ( var deg = 0; deg <= 180; deg += 6 ) {
     var rad = Math.PI * deg / 180;
