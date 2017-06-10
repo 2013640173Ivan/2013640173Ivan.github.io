@@ -17,10 +17,29 @@ var material = new THREE.MeshBasicMaterial( {color: 0xF90AEE} );
 
 
 
+var ojoi=new THREE.SphereGeometry(0.75,32,32);
+ojoi.translate(-1.5,12,5);
+var mallojoi =new THREE.Mesh( ojoi, material);
 
-malla.rotateY( Math.PI/8 );
+
+
+
+var pin = new THREE.Geometry();
+pin.merge(malla.geometry, malla.matrix);
+pin.merge(mallojoi.geometry, mallojoi.matrix);
+pin.translate(-52,10,70);
+var mallapin = new THREE.Mesh(bomba, material);
+//mallabomba.rotateY( Math.PI/12 );
+//mallabomba.rotateZ( Math.PI/4 );
+escena.add(mallapin);
+
+
+
+
+
+mallapin.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
-escena.add(malla);
+
 
 
 
@@ -40,16 +59,16 @@ function loop()
 requestAnimationFrame(loop);
 
 
-malla.rotation.x += 0.05;
+mallapin.rotation.x += 0.05;
 
-malla.rotation.y += 0.05;
+mallapin.rotation.y += 0.05;
 
 
 renderizador.render(escena, camara);
 
 }
 
-var camara, escena, renderizador, malla;
+var camara, escena, renderizador, mallapin;
 
 
 loop();
