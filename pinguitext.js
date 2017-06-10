@@ -1,5 +1,8 @@
 
 
+function setup (){
+THREE.ImageUtils.crossOrigin = '';
+var textura =THREE.ImageUtils.loadTexture('crate.gif');
 material = new THREE.MeshBasicMaterial( {color: 0x09F7F3} );
 
 var points = [];
