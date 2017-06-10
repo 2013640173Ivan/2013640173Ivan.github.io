@@ -60,16 +60,9 @@ renderer.setSize(window.innerHeight*.95, window.innerHeight*.95);
 document.body.appendChild(renderer.domElement);
 }
 
-function loop() {
-requestAnimationFrame(loop);
 
-mallapingui.rotation.x += 0.01;
-mallapingui.rotation.y += 0.01;
-
-renderer.render(escena, camara);
-}
 var camara, escena, renderer, mallapingui;
 
 
 setup()
-loop();
+
