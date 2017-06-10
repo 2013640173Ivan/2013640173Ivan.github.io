@@ -138,7 +138,7 @@ renderizador.render( escena, camara );
     
 }
 
-function loop() 
+/*function loop() 
 {
 requestAnimationFrame(loop);
 
@@ -150,9 +150,9 @@ mallapingui.rotation.y += 0.01;
 
 renderizador.render(escena, camara);
 
-}
+}*/
 
-var camara, escena, renderer, malla;
+var camara, escena, renderer, mallapingui;
 
 
 setup()
