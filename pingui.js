@@ -128,3 +128,19 @@ document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
 
 
+
+
+
+
+
+function loop() {
+requestAnimationFrame(loop);
+
+mallapingui.rotation.x += 0.01;
+mallapingui.rotation.y += 0.01;
+
+renderizador.render(escena, camara);
+}
+
+
+loop();
