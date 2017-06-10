@@ -31,7 +31,6 @@ pin.translate(-52,10,70);
 var mallapin = new THREE.Mesh(pin, material);
 //mallabomba.rotateY( Math.PI/12 );
 //mallabomba.rotateZ( Math.PI/4 );
-escena.add(mallapin);
 
 
 
@@ -39,6 +38,7 @@ escena.add(mallapin);
 
 mallapin.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
+escena.add(mallapin);
 
 
 
