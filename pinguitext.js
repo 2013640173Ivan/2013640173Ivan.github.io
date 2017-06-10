@@ -24,7 +24,7 @@ Ovo.position.set(0, 0, 0);
 
 
 
-//Ovo.rotateY( Math.PI/8 );
+Ovo.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
 escena.add(Ovo);
 
