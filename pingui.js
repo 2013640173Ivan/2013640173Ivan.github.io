@@ -1,3 +1,12 @@
+function setup (){
+THREE.ImageUtils.crossOrigin = '';
+var textura =THREE.ImageUtils.loadTexture('2013640173Ivan.github.io/easter.jpg');
+  //var textura =THREE.ImageUtils.loadTexture('crate.gif');
+var materialt = new THREE.MeshLambertMaterial({map: textura});
+
+
+
+
 var points = [];
 for ( var deg = 0; deg <= 180; deg += 6 ) {
 
@@ -109,7 +118,7 @@ pingui.merge(mallapied.geometry, mallapied.matrix);
 
 
 var material3 = new THREE.MeshNormalMaterial();
-var mallapingui = new THREE.Mesh(pingui, material3);
+var mallapingui = new THREE.Mesh(pingui, materialt);
 mallapingui.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
 escena.add(mallapingui);
@@ -127,7 +136,7 @@ renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
 
-
+}
 
 
 
