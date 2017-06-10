@@ -22,7 +22,7 @@ var material = new THREE.MeshBasicMaterial( {color: 0x09F7F3} );
 
 var material2 = new THREE.MeshBasicMaterial( {color: 0xF90AEE} );
 
-var Ovo = new THREE.Mesh( geometry,material);
+var Ovo = new THREE.Mesh( geometry,matext);
 Ovo.position.set(0, 0, 0);
 
 //escena.add(sphere,troncoMalla,mallojoi,mallojod,mallapied,mallapiei);
@@ -36,17 +36,17 @@ Ovo.position.set(0, 0, 0);
 
 var ojoi=new THREE.SphereGeometry(0.75,32,32);
 ojoi.translate(-1.5,12,5);
-var mallojoi =new THREE.Mesh( ojoi, material2);
+var mallojoi =new THREE.Mesh( ojoi, matext);
 
 
 var ojod=new THREE.SphereGeometry(0.75,32,32);
 ojod.translate(1.5,12,5);
-var mallojod =new THREE.Mesh( ojod, material2);
+var mallojod =new THREE.Mesh( ojod, matext);
 
 
 var ojos=new THREE.SphereGeometry(5,32,32);
 ojos.translate(0,12,0);
-var mallojos =new THREE.Mesh( ojos, material2);
+var mallojos =new THREE.Mesh( ojos, matext);
 
 
 var forma = new THREE.Geometry();
@@ -71,7 +71,7 @@ forma.computeFaceNormals();
 
 //var material = new THREE.MeshNormalMaterial();
 
-var mallapic = new THREE.Mesh( forma, material2 );
+var mallapic = new THREE.Mesh( forma, matext );
 
 //var geometry = new THREE.ConeGeometry( 1.5, 5, 32 );
 //var material3 = new THREE.MeshBasicMaterial( {color: 0xffff00} );
@@ -88,7 +88,7 @@ figura.lineTo(6, -7);
 var pied = new THREE.ExtrudeGeometry( figura,
                                        {amount: .75} );
 
-var mallapied =new THREE.Mesh( pied, material);
+var mallapied =new THREE.Mesh( pied, matext);
 
 
 var figura2 = new THREE.Shape();
@@ -100,7 +100,7 @@ figura2.lineTo(-6, -7);
 var piei = new THREE.ExtrudeGeometry( figura2,
                                        {amount: 0.75} );
 
-var mallapiei =new THREE.Mesh( piei, material);
+var mallapiei =new THREE.Mesh( piei, matext);
 
 
 
