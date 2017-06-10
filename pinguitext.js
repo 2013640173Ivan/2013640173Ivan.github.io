@@ -40,9 +40,9 @@ function loop()
 requestAnimationFrame(loop);
 
 
-Ovo.rotation.x += 0.05;
+Ovo.rotate.x += 0.05;
 
-Ovo.rotation.y += 0.05;
+Ovo.rotate.y += 0.05;
 
 
 renderizador.render(escena, camara);
@@ -51,5 +51,5 @@ renderizador.render(escena, camara);
 
 var camara, escena, renderizador, Ovo;
 
-
+setup()
 loop();
