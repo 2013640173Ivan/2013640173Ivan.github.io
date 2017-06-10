@@ -18,9 +18,9 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 malla = new THREE.Mesh(forma, material);
   
   var luzPuntual = new THREE.PointLight(0xFFFFFF);
-  luzPuntual.position.x=10;
-  luzPuntual.position.y=10;
-  luzPuntual.position.z=10;
+  luzPuntual.position.x=50;
+  luzPuntual.position.y=50;
+  luzPuntual.position.z=50;
   
   
 
