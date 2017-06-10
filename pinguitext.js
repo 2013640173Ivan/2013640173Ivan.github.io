@@ -2,8 +2,12 @@
 
 function setup (){
 THREE.ImageUtils.crossOrigin = '';
-var textura =THREE.ImageUtils.loadTexture('crate.gif');
-material = new THREE.MeshBasicMaterial( {color: 0x09F7F3} );
+
+var textura =THREE.ImageUtils.loadTexture('2013640173Ivan.github.io/brick_diffuse.jpg');
+
+var material = new THREE.MeshLambertMaterial({map: textura});
+
+
 
 var points = [];
 for ( var deg = 0; deg <= 180; deg += 6 ) {
@@ -20,7 +24,7 @@ Ovo.position.set(0, 0, 0);
 
 
 
-Ovo.rotateY( Math.PI/8 );
+//Ovo.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
 escena.add(Ovo);
 
@@ -34,15 +38,17 @@ renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
 
+}
+
 
 function loop() 
 {
 requestAnimationFrame(loop);
 
 
-Ovo.rotate.x += 0.05;
+Ovo.rotation.x += 0.05;
 
-Ovo.rotate.y += 0.05;
+Ovo.rotation.y += 0.05;
 
 
 renderizador.render(escena, camara);
