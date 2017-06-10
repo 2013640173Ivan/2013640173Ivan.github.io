@@ -81,4 +81,5 @@ var camara, escena, renderer, mallapingui;
 
 
 
+setup()
 loop();
