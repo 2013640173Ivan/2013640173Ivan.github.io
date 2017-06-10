@@ -137,12 +137,12 @@ mallapingui.rotation.x += 0.01;
 mallapingui.rotation.y += 0.01;
 
 
-renderer.render(escena, camara);
+renderizador.render(escena, camara);
 
 }
 
 //var camara, escena, renderer, mallapingui;
 
-setup()
+
 
 loop();
