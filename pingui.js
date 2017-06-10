@@ -1,5 +1,9 @@
-function setup() 
-{
+
+THREE.ImageUtils.crossOrigin = '';
+var textura =THREE.ImageUtils.loadTexture('crate.gif');
+var matext= new THREE.MeshBasicMaterial({map: textura});
+
+
 var points = [];
 for ( var deg = 0; deg <= 180; deg += 6 ) {
 
@@ -111,7 +115,9 @@ pingui.merge(mallapied.geometry, mallapied.matrix);
 
 
 var material3 = new THREE.MeshNormalMaterial();
-var mallapingui = new THREE.Mesh(pingui, material3);
+
+
+var mallapingui = new THREE.Mesh( pingui, matext );
 mallapingui.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
 escena.add(mallapingui);
@@ -130,7 +136,6 @@ document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
 
     
-}
 
 function loop() 
 {
@@ -149,5 +154,5 @@ renderizador.render(escena, camara);
 //var camara, escena, renderer, mallapingui;
 
 
-setup();
+
 loop();
