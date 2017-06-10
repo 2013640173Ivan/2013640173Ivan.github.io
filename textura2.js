@@ -17,6 +17,16 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 //var forma = new THREE.BoxGeometry(1,1,1);
 malla = new THREE.Mesh(forma, material);
   
+  
+  
+  
+  
+var ojos=new THREE.SphereGeometry(5,32,32);
+ojos.translate(0,12,0);
+ mallojos =new THREE.Mesh( ojos, material);
+  
+  
+  
   var luzPuntual = new THREE.PointLight(0xFFFFFF);
   luzPuntual.position.x=50;
   luzPuntual.position.y=50;
@@ -26,7 +36,8 @@ malla = new THREE.Mesh(forma, material);
 
 
 escena = new THREE.Scene();
-escena.add(malla);
+escena.add(malla,mallojos);
+  
   escena.add(luzPuntual);
 
 camara = new THREE.PerspectiveCamera();
