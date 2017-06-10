@@ -30,8 +30,8 @@ ojos.translate(0,12,0);
   
   
   var pingui = new THREE.Geometry();
-pingui.merge(forma.geometry, forma.matrix);
-pingui.merge(ojos.geometry, ojos.matrix);
+pingui.merge(malla.geometry, malla.matrix);
+pingui.merge(mallojos.geometry, mallojos.matrix);
   
   var mallapingui = new THREE.Mesh(pingui, material);
 //mallapingui.rotateY( Math.PI/8 );
