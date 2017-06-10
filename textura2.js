@@ -2,7 +2,18 @@ function setup (){
 THREE.ImageUtils.crossOrigin = '';
 var textura =THREE.ImageUtils.loadTexture('2013640173Ivan.github.io/brick_diffuse.jpg');
 var material = new THREE.MeshLambertMaterial({map: textura});
-var forma = new THREE.BoxGeometry(1,1,1);
+  
+  var points = [];
+for ( var deg = 0; deg <= 180; deg += 6 ) {
+    var rad = Math.PI * deg / 180;
+    var point = new THREE.Vector2( ( 10*0.72 + 10*.08 * Math.cos( rad ) ) * Math.sin( rad ), - 10*Math.cos( rad ) ); // the "egg equation"
+    //console.log( point ); // x-coord should be greater than zero to avoid degenerate triangles; it is not in this formula.
+    points.push( point );
+}
+
+ forma = new THREE.LatheGeometry( points, 32 );
+  
+//var forma = new THREE.BoxGeometry(1,1,1);
 malla = new THREE.Mesh(forma, material);
   
   var luzPuntual = new THREE.PointLight(0xFFFFFF);
