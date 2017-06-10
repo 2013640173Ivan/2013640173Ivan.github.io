@@ -63,8 +63,8 @@ document.body.appendChild(renderer.domElement);
 function loop() {
 requestAnimationFrame(loop);
 
-malla.rotation.x += 0.01;
-malla.rotation.y += 0.01;
+mallapingui.rotation.x += 0.01;
+mallapingui.rotation.y += 0.01;
 
 renderer.render(escena, camara);
 }
