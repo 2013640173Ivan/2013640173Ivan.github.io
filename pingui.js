@@ -1,6 +1,6 @@
 
 THREE.ImageUtils.crossOrigin = '';
-var textura =THREE.ImageUtils.loadTexture('crate.gif');
+var textura =THREE.ImageUtils.loadTexture('easter.jpg');
 var matext= new THREE.MeshBasicMaterial({map: textura});
 
 
