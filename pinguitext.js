@@ -1,8 +1,6 @@
 
-function setup (){
-THREE.ImageUtils.crossOrigin = '';
-var textura =THREE.ImageUtils.loadTexture('crate.gif');
-var material = new THREE.MeshBasicMaterial({map: textura});
+
+material = new THREE.MeshBasicMaterial( {color: 0x09F7F3} );
 
 var points = [];
 for ( var deg = 0; deg <= 180; deg += 6 ) {
@@ -32,7 +30,7 @@ var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
-}
+
 
 function loop() 
 {
