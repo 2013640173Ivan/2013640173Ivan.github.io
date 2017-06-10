@@ -5,7 +5,7 @@ THREE.ImageUtils.crossOrigin = '';
 
 var textura =THREE.ImageUtils.loadTexture('2013640173Ivan.github.io/brick_diffuse.jpg');
 
-var material = new THREE.MeshLambertMaterial({map: textura});
+var material = new THREE.MeshBasicMaterial({map: textura});
 
 
 
@@ -17,8 +17,8 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
     points.push( point );
 }
 
-geometry = new THREE.LatheGeometry( points, 32 );
-var Ovo = new THREE.Mesh( geometry,material);
+var geometry = new THREE.LatheGeometry( points, 32 );
+ Ovo = new THREE.Mesh( geometry,material);
 Ovo.position.set(0, 0, 0);
 
 
