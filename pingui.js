@@ -155,4 +155,4 @@ var camara, escena, renderer, mallapingui;
 
 
 
-loop();
+//loop();
