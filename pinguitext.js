@@ -42,7 +42,7 @@ Ovo.rotation.x += 0.05;
 Ovo.rotation.y += 0.05;
 
 
-rendererizador.render(escena, camara);
+renderizador.render(escena, camara);
 
 }
 
