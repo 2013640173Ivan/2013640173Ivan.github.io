@@ -12,7 +12,7 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
     points.push( point );
 }
 
- forma = new THREE.LatheGeometry( points, 32 );
+ var forma = new THREE.LatheGeometry( points, 32 );
   
 //var forma = new THREE.BoxGeometry(1,1,1);
 malla = new THREE.Mesh(forma, material);
