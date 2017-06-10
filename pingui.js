@@ -1,3 +1,5 @@
+function setup() 
+{
 var points = [];
 for ( var deg = 0; deg <= 180; deg += 6 ) {
 
@@ -126,6 +128,9 @@ var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
+
+    
+}
 
 function loop() 
 {
