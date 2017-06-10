@@ -33,7 +33,7 @@ ojos.translate(0,12,0);
 pingui.merge(malla.geometry, malla.matrix);
 pingui.merge(mallojos.geometry, mallojos.matrix);
   
-  var mallapingui = new THREE.Mesh(pingui, material);
+  var mallapingui = new THREE.Mesh(pingui, material2);
 //mallapingui.rotateY( Math.PI/8 );
 
   
@@ -61,25 +61,25 @@ document.body.appendChild(renderer.domElement);
 }
 
 
-//function loop() {
+function loop() {
 
-//requestAnimationFrame(loop);
-
-
-
-//mallapingui.rotation.x += 0.01;
-
-//mallapingui.rotation.y += 0.01;
+requestAnimationFrame(loop);
 
 
-//renderer.render(escena, camara);
+
+mallapingui.rotation.x += 0.01;
+
+mallapingui.rotation.y += 0.01;
 
 
-//}
+renderer.render(escena, camara);
+
+
+}
 
 var camara, escena, renderer, mallapingui;
 
 
 
 setup()
-//loop();
+loop();
