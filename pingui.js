@@ -1,4 +1,6 @@
 
+function setup()
+{
 THREE.ImageUtils.crossOrigin = '';
 var textura =THREE.ImageUtils.loadTexture('easter.jpg');
 var matext= new THREE.MeshBasicMaterial({map: textura});
@@ -135,7 +137,7 @@ renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
 
-    
+}
 /*
 function loop() 
 {
