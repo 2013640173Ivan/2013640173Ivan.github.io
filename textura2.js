@@ -1,7 +1,7 @@
 function setup (){
 THREE.ImageUtils.crossOrigin = '';
-//var textura =THREE.ImageUtils.loadTexture('2013640173Ivan.github.io/brick_diffuse.jpg');
-  var textura =THREE.ImageUtils.loadTexture('crate.gif');
+var textura =THREE.ImageUtils.loadTexture('2013640173Ivan.github.io/easter.jpg');
+  //var textura =THREE.ImageUtils.loadTexture('crate.gif');
 var material = new THREE.MeshLambertMaterial({map: textura});
   
   var points = [];
