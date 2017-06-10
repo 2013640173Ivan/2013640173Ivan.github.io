@@ -61,25 +61,25 @@ document.body.appendChild(renderer.domElement);
 }
 
 
-function loop() {
+//function loop() {
 
-requestAnimationFrame(loop);
-
-
-
-mallapingui.rotation.x += 0.01;
-
-mallapingui.rotation.y += 0.01;
+//requestAnimationFrame(loop);
 
 
-renderer.render(escena, camara);
+
+//mallapingui.rotation.x += 0.01;
+
+//mallapingui.rotation.y += 0.01;
 
 
-}
+//renderer.render(escena, camara);
+
+
+//}
 
 var camara, escena, renderer, mallapingui;
 
 
 
 setup()
-loop();
+//loop();
