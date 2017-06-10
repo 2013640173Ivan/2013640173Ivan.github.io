@@ -1,13 +1,5 @@
 
 
-function setup (){
-THREE.ImageUtils.crossOrigin = '';
-
-var textura =THREE.ImageUtils.loadTexture('2013640173Ivan.github.io/brick_diffuse.jpg');
-
-var material = new THREE.MeshBasicMaterial({map: textura});
-
-
 
 var points = [];
 for ( var deg = 0; deg <= 180; deg += 6 ) {
@@ -18,15 +10,17 @@ for ( var deg = 0; deg <= 180; deg += 6 ) {
 }
 
 var geometry = new THREE.LatheGeometry( points, 32 );
- Ovo = new THREE.Mesh( geometry,material);
-Ovo.position.set(0, 0, 0);
+
+var material = new THREE.MeshBasicMaterial( {color: 0xF90AEE} );
+ malla = new THREE.Mesh( geometry,material);
+/malla.position.set(0, 0, 0);
 
 
 
 
-Ovo.rotateY( Math.PI/8 );
+malla.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
-escena.add(Ovo);
+escena.add(malla);
 
 
 
@@ -38,7 +32,7 @@ renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
 
-}
+
 
 
 function loop() 
@@ -46,16 +40,16 @@ function loop()
 requestAnimationFrame(loop);
 
 
-Ovo.rotation.x += 0.05;
+malla.rotation.x += 0.05;
 
-Ovo.rotation.y += 0.05;
+malla.rotation.y += 0.05;
 
 
 renderizador.render(escena, camara);
 
 }
 
-var camara, escena, renderizador, Ovo;
+var camara, escena, renderizador, malla;
 
-setup()
+
 loop();
