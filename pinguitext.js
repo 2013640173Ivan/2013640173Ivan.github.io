@@ -13,7 +13,7 @@ var geometry = new THREE.LatheGeometry( points, 32 );
 
 var material = new THREE.MeshBasicMaterial( {color: 0xF90AEE} );
  malla = new THREE.Mesh( geometry,material);
-/malla.position.set(0, 0, 0);
+//malla.position.set(0, 0, 0);
 
 
 
