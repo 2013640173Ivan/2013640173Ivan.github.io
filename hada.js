@@ -35,14 +35,19 @@ malla.scale.set(0.5,0.5,0.5)
 //malla.rotateY( -Math.PI/4 );
 
 var figurai = new THREE.Shape();
-
+/*
 figurai.moveTo(-8,8);
 figurai.lineTo(-35,10);
 figurai.lineTo(-42.5,45);
 figurai.lineTo(-8.75,11.25);
 figurai.lineTo(-8,8);
+*/
 
-
+figurai.moveTo(-8,8);
+figurai.lineTo(-25,10);
+figurai.lineTo(-30,25);
+figurai.lineTo(-8.75,11.25);
+figurai.lineTo(-8,8);
 var formai = new THREE.ExtrudeGeometry( figurai,
                                        {amount: 1} );
                                        
