@@ -152,11 +152,11 @@ mallapingui.rotation.y += 0.00;
 renderizador.render(escena, camara);
 
 }
-
+ loop();
    
 }
 var camara, escena, renderer, mallapingui;
 
 
- loop();
+
 
