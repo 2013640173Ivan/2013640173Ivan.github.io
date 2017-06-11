@@ -39,7 +39,7 @@ var mallai = new THREE.Mesh( formai, material );
 
 
 
-
+/*
 var figuraiu = new THREE.Shape();
 
 figuraiu.moveTo(-35,-45);
@@ -75,14 +75,14 @@ var formaiue = new THREE.ExtrudeGeometry( figuraiue,
                                 var material = new THREE.MeshNormalMaterial();
 var mallaiue = new THREE.Mesh( formaiue, material );
 
-
+*/
 
 var hada = new THREE.Geometry();
 hada.merge(sphere.geometry, sphere.matrix);
 hada.merge(malla.geometry, malla.matrix);
 hada.merge(mallai.geometry, mallai.matrix);
-hada.merge(mallaiu.geometry, mallaiu.matrix);
-hada.merge(mallaiue.geometry, mallaiue.matrix);
+//hada.merge(mallaiu.geometry, mallaiu.matrix);
+//hada.merge(mallaiue.geometry, mallaiue.matrix);
 
 
 
