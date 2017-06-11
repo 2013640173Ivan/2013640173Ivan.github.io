@@ -6,6 +6,12 @@ var bottom = new THREE.CylinderGeometry( 14, 14, 2.5, 32 );
 bottom.translate(0,-10,0)
 var mallabot = new THREE.Mesh( bottom, material );
 
+
+var bottom2 = new THREE.CylinderGeometry( 14, 14, 2.5, 32 );
+bottom2.translate(0,-10,0)
+var mallabot2 = new THREE.Mesh( bottom, material );
+
+
 var figura = new THREE.Shape();
 
 figura.moveTo(8,8);
@@ -103,7 +109,7 @@ var mallahada = new THREE.Mesh(hada, material3);
 var escena = new THREE.Scene();
 mallahada.scale.set(0.3,0.3,0.3)
 escena.add(mallahada);
-//escena.add(mallabot);
+escena.add(mallabot2);
 
 
 
