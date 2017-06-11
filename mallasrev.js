@@ -1,3 +1,9 @@
+
+
+THREE.ImageUtils.crossOrigin = '';
+ var texturah =THREE.ImageUtils.loadTexture('blu.png');
+var matexth = new THREE.MeshBasicMaterial({map: texturah});
+
 var geometry = new THREE.SphereGeometry( 10, 60, 60, Math.PI, Math.PI*2, 3*Math.PI/2);
 geometry.translate(0,5,0)
 var material = new THREE.MeshBasicMaterial( { color: 0xddddff } );
@@ -14,6 +20,10 @@ var ojoi=new THREE.SphereGeometry(1,32,32);
 ojoi.translate(-2.5,9,9);
 var mallojoi =new THREE.Mesh( ojoi, material);
 
+
+var bottom = new THREE.CylinderGeometry( 14, 14, 2.5, 32 );
+bottom.translate(0,-10,0)
+var mallabot = new THREE.Mesh( bottom, material );
 
 var ojod=new THREE.SphereGeometry(1,32,32);
 ojod.translate(2.5,9,9);
@@ -53,6 +63,7 @@ hongoForma.merge(mallojoi.geometry, mallojoi.matrix);
 hongoForma.merge(mallojod.geometry, mallojod.matrix);
 hongoForma.merge(mallapied.geometry, mallapied.matrix);
 hongoForma.merge(mallapiei.geometry, mallapiei.matrix);
+hongoForma.merge(mallabot.geometry, mallabot.matrix);
 
 
 
@@ -60,7 +71,7 @@ hongoForma.merge(mallapiei.geometry, mallapiei.matrix);
 
 
 var material2 = new THREE.MeshNormalMaterial();
-var mallahongoForma = new THREE.Mesh(hongoForma, material2);
+var mallahongoForma = new THREE.Mesh(hongoForma, matexth);
 
 var escena = new THREE.Scene();
 escena.add(mallahongoForma);
@@ -74,5 +85,21 @@ var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
+
+function loop() 
+{
+requestAnimationFrame(loop);
+
+
+mallahongoForma.rotation.x += 0.00;
+
+mallahongoForma.rotation.y += 0.00;
+
+
+renderizador.render(escena, camara);
+
+}
+
+loop();
 
 
