@@ -92,7 +92,7 @@ var material3 = new THREE.MeshNormalMaterial();
 var mallahada = new THREE.Mesh(hada, material3);
 //mallahada.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
-mallahada.scale.set(0.2,0.2,0.5);
+mallahada.scale.set(0.35,0.35,0.35);
 escena.add(mallahada);
 escena.add(mallabot);
 
