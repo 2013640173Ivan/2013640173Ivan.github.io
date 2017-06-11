@@ -3,7 +3,7 @@ var material = new THREE.MeshBasicMaterial( {color: 0x0AF9EE} );
 var sphere = new THREE.Mesh( geometry, material );
 
 var bottom = new THREE.CylinderGeometry( 14, 14, 2.5, 32 );
-bottom.translate(0,-10,0)
+bottom.translate(0,-5,0)
 var mallabot = new THREE.Mesh( bottom, material );
 
 var figura = new THREE.Shape();
