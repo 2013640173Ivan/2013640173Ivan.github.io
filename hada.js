@@ -16,7 +16,7 @@ var figura = new THREE.Shape();
 
 figura.moveTo(8,8);
 figura.lineTo(27.5,15);
-figura.lineTo(40,35);
+figura.lineTo(30,25);
 figura.lineTo(8.75,11.25);
 figura.lineTo(8,8);
 /*
