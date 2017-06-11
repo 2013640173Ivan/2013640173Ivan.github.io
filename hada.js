@@ -2,17 +2,15 @@ var geometry = new THREE.SphereGeometry( 10, 32, 32 );
 var material = new THREE.MeshBasicMaterial( {color: 0x0AF9EE} );
 var sphere = new THREE.Mesh( geometry, material );
 
-var bottom = new THREE.CylinderGeometry( 40, 40, 50, 32 );
-bottom.translate(0,-100,0)
-var mallabot = new THREE.Mesh( bottom, material );
+
 
 var figura = new THREE.Shape();
 
-figura.moveTo(40,40);
-figura.lineTo(150,60);
-figura.lineTo(200,180);
-figura.lineTo(35,45);
-figura.lineTo(40,40);
+figura.moveTo(10,10);
+figura.lineTo(37.5,15);
+figura.lineTo(50,45);
+figura.lineTo(8.75,11.25);
+figura.lineTo(10,10);
 
 
 var forma = new THREE.ExtrudeGeometry( figura,
