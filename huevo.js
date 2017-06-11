@@ -1,3 +1,7 @@
+THREE.ImageUtils.crossOrigin = '';
+ var texturah =THREE.ImageUtils.loadTexture('blu.png');
+var matexth = new THREE.MeshBasicMaterial({map: texturah});
+
 var points = [];
 for ( var deg = 0; deg <= 180; deg += 6 ) {
 
@@ -18,7 +22,9 @@ var Ovo = new THREE.Mesh( geometry,material2);
 Ovo.position.set(0, 0, 0);
 
 
-
+var bottom = new THREE.CylinderGeometry( 14, 14, 2.5, 32 );
+bottom.translate(0,-10,0)
+var mallabot = new THREE.Mesh( bottom, material );
 
 var ojoi=new THREE.SphereGeometry(0.75,32,32);
 ojoi.translate(-1.5,7,5);
@@ -36,10 +42,11 @@ var huevo = new THREE.Geometry();
 huevo.merge(Ovo.geometry, Ovo.matrix);
 huevo.merge(mallojoi.geometry, mallojoi.matrix);
 huevo.merge(mallojod.geometry, mallojod.matrix);
+huevo.merge(mallabot.geometry, mallabot.matrix);
 
 
 var material3 = new THREE.MeshNormalMaterial();
-var mallahuevo = new THREE.Mesh(huevo, material3);
+var mallahuevo = new THREE.Mesh(huevo, matexth);
 mallahuevo.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
 escena.add(mallahuevo);
@@ -56,3 +63,21 @@ var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
+
+
+function loop() 
+{
+requestAnimationFrame(loop);
+
+
+mallahuevoForma.rotation.x += 0.01;
+
+mallahuevoForma.rotation.y += 0.01;
+
+
+renderizador.render(escena, camara);
+
+}
+
+loop();
+
