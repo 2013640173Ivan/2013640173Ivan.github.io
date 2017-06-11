@@ -2,14 +2,14 @@ var geometry = new THREE.SphereGeometry( 10, 32, 32 );
 var material = new THREE.MeshBasicMaterial( {color: 0x0AF9EE} );
 var sphere = new THREE.Mesh( geometry, material );
 
-var bottom = new THREE.CylinderGeometry( 14, 14, 2.5, 32 );
+var bottom = new THREE.CylinderGeometry( 28, 28, 2.5, 32 );
 bottom.translate(0,-10,0)
 var mallabot = new THREE.Mesh( bottom, material );
 
 
-var bottom2 = new THREE.CylinderGeometry( 14, 14, 2.5, 32 );
+/*var bottom2 = new THREE.CylinderGeometry( 14, 14, 2.5, 32 );
 bottom2.translate(0,0,0)
-var mallabot2 = new THREE.Mesh( bottom, material );
+var mallabot2 = new THREE.Mesh( bottom, material );*/
 
 
 var figura = new THREE.Shape();
@@ -119,7 +119,7 @@ var mallahada = new THREE.Mesh(hada, material3);
 var escena = new THREE.Scene();
 mallahada.scale.set(0.5,0.5,0.5)
 escena.add(mallahada);
-escena.add(mallabot2);
+//escena.add(mallabot2);
 
 
 
