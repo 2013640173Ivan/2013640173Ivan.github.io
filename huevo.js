@@ -70,9 +70,9 @@ function loop()
 requestAnimationFrame(loop);
 
 
-mallahuevoForma.rotation.x += 0.01;
+mallahuevo.rotation.x += 0.01;
 
-mallahuevoForma.rotation.y += 0.01;
+mallahuevo.rotation.y += 0.01;
 
 
 renderizador.render(escena, camara);
