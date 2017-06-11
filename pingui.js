@@ -1,6 +1,5 @@
 
-function setup()
-{
+
 THREE.ImageUtils.crossOrigin = '';
 var textura =THREE.ImageUtils.loadTexture('easter.jpg');
 var matext= new THREE.MeshBasicMaterial({map: textura});
@@ -139,7 +138,8 @@ renderizador.render( escena, camara );
 
 
 
-
+function loop() 
+{
 requestAnimationFrame(loop);
 
 
@@ -150,11 +150,12 @@ mallapingui.rotation.y += 0.00;
 
 renderizador.render(escena, camara);
 
-
-   
 }
+
 var camara, escena, renderer, mallapingui;
 
 
+
+loop();
 
 
