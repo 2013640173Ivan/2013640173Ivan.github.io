@@ -3,7 +3,7 @@ var material = new THREE.MeshBasicMaterial( {color: 0x0AF9EE} );
 var sphere = new THREE.Mesh( geometry, material );
 
 var bottom = new THREE.CylinderGeometry( 14, 14, 2.5, 32 );
-bottom.translate(0,-8,0)
+bottom.translate(0,-10,0)
 var mallabot = new THREE.Mesh( bottom, material );
 
 var figura = new THREE.Shape();
@@ -20,7 +20,7 @@ var forma = new THREE.ExtrudeGeometry( figura,
                                        
                                 var material = new THREE.MeshNormalMaterial();
 var malla = new THREE.Mesh( forma, material );
-//malla.scale.set(0.5,0.5,0.5)
+malla.scale.set(0.5,0.5,0.5)
 //malla.rotateY( -Math.PI/4 );
 
 var figurai = new THREE.Shape();
@@ -37,7 +37,7 @@ var formai = new THREE.ExtrudeGeometry( figurai,
                                        
                                 var material = new THREE.MeshNormalMaterial();
 var mallai = new THREE.Mesh( formai, material );
-//mallai.scale.set(0.5,0.5,0.5)
+mallai.scale.set(0.5,0.5,0.5)
 
 
 /*
