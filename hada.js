@@ -96,8 +96,8 @@ var mallahada = new THREE.Mesh(hada, material3);
 //hada.merge(mallahada.geometry, mallahada.matrix);
 //hada.merge(mallabot.geometry, mallabot.matrix);
 
-var material4 = new THREE.MeshNormalMaterial();
-var mallahadaf = new THREE.Mesh(hadaf, material4);
+//var material4 = new THREE.MeshNormalMaterial();
+//var mallahadaf = new THREE.Mesh(hadaf, material4);
 
 //mallahada.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
