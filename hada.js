@@ -6,11 +6,11 @@ var sphere = new THREE.Mesh( geometry, material );
 
 var figura = new THREE.Shape();
 
-figura.moveTo(10,10);
+figura.moveTo(8,8);
 figura.lineTo(37.5,15);
 figura.lineTo(50,45);
 figura.lineTo(8.75,11.25);
-figura.lineTo(10,10);
+figura.lineTo(8,8);
 
 
 var forma = new THREE.ExtrudeGeometry( figura,
@@ -22,11 +22,11 @@ var malla = new THREE.Mesh( forma, material );
 
 var figurai = new THREE.Shape();
 
-figurai.moveTo(-10,10);
+figurai.moveTo(-8,8);
 figurai.lineTo(-35,10);
 figurai.lineTo(-42.5,45);
 figurai.lineTo(-8.75,11.25);
-figurai.lineTo(-10,10);
+figurai.lineTo(-8,8);
 
 
 var formai = new THREE.ExtrudeGeometry( figurai,
