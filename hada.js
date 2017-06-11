@@ -8,7 +8,7 @@ var mallabot = new THREE.Mesh( bottom, material );
 
 
 var bottom2 = new THREE.CylinderGeometry( 14, 14, 2.5, 32 );
-bottom2.translate(0,-10,0)
+bottom2.translate(0,0,0)
 var mallabot2 = new THREE.Mesh( bottom, material );
 
 
