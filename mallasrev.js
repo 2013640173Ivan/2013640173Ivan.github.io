@@ -91,9 +91,9 @@ function loop()
 requestAnimationFrame(loop);
 
 
-mallahongoForma.rotation.x += 0.00;
+mallahongoForma.rotation.x += 0.01;
 
-mallahongoForma.rotation.y += 0.00;
+mallahongoForma.rotation.y += 0.01;
 
 
 renderizador.render(escena, camara);
