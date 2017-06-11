@@ -74,6 +74,7 @@ var material2 = new THREE.MeshNormalMaterial();
 var mallahongoForma = new THREE.Mesh(hongoForma, matexth);
 
 var escena = new THREE.Scene();
+mallahongoForma.scale.set(0.75,0.75,0.75);
 escena.add(mallahongoForma);
 
 //escena.add(sphere,troncoMalla,mallojoi,mallojod,mallapied,mallapiei);
