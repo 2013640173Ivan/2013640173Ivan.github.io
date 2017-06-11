@@ -88,7 +88,7 @@ var material3 = new THREE.MeshNormalMaterial();
 var mallahada = new THREE.Mesh(hada, material3);
 mallahada.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
-mallahada.scale.set(0.25,0.25,0.25);
+//mallahada.scale.set(0.25,0.25,0.25);
 escena.add(mallahada);
 
 
@@ -98,7 +98,7 @@ escena.add(mallahada);
 //escena.add(sphere,malla,mallai,mallaiu,mallaiue );
 
 var camara = new THREE.PerspectiveCamera();
-camara.position.z = 125;
+camara.position.z = 120;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
