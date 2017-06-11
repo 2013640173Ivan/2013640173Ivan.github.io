@@ -82,7 +82,7 @@ var hada = new THREE.Geometry();
 hada.merge(sphere.geometry, sphere.matrix);
 hada.merge(malla.geometry, malla.matrix);
 hada.merge(mallai.geometry, mallai.matrix);
-//hada.merge(mallabot.geometry, mallabot.matrix);
+hada.merge(mallabot.geometry, mallabot.matrix);
 //hada.merge(mallaiu.geometry, mallaiu.matrix);
 //hada.merge(mallaiue.geometry, mallaiue.matrix);
 
@@ -90,11 +90,11 @@ hada.merge(mallai.geometry, mallai.matrix);
 
 var material3 = new THREE.MeshNormalMaterial();
 var mallahada = new THREE.Mesh(hada, material3);
-mallahada.scale.set(0.35,0.35,0.35);
+//mallahada.scale.set(0.35,0.35,0.35);
 
-var hadaf = new THREE.Geometry();
-hada.merge(mallahada.geometry, mallahada.matrix);
-hada.merge(mallabot.geometry, mallabot.matrix);
+//var hadaf = new THREE.Geometry();
+//hada.merge(mallahada.geometry, mallahada.matrix);
+//hada.merge(mallabot.geometry, mallabot.matrix);
 
 var material4 = new THREE.MeshNormalMaterial();
 var mallahadaf = new THREE.Mesh(hadaf, material4);
@@ -102,8 +102,8 @@ var mallahadaf = new THREE.Mesh(hadaf, material4);
 //mallahada.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
 
-escena.add(mallahadaf);
-//escena.add(mallabot);
+escena.add(mallahada);
+escena.add(mallabot);
 
 
 
