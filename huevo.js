@@ -49,6 +49,7 @@ var material3 = new THREE.MeshNormalMaterial();
 var mallahuevo = new THREE.Mesh(huevo, matexth);
 mallahuevo.rotateY( Math.PI/8 );
 var escena = new THREE.Scene();
+mallahuevo.scale.set(0.75,0.75,0.75);
 escena.add(mallahuevo);
 
 
