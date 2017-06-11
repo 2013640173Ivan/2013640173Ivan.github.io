@@ -18,6 +18,7 @@ var forma = new THREE.ExtrudeGeometry( figura,
                                        
                                 var material = new THREE.MeshNormalMaterial();
 var malla = new THREE.Mesh( forma, material );
+malla.scale.set(0.5,0.5,0.5)
 //malla.rotateY( -Math.PI/4 );
 
 var figurai = new THREE.Shape();
@@ -34,7 +35,7 @@ var formai = new THREE.ExtrudeGeometry( figurai,
                                        
                                 var material = new THREE.MeshNormalMaterial();
 var mallai = new THREE.Mesh( formai, material );
-
+mallai.scale.set(0.5,0.5,0.5)
 
 
 /*
