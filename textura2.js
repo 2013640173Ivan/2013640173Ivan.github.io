@@ -6,7 +6,7 @@ var material = new THREE.MeshLambertMaterial({map: textura});
 
 
 var geometry = new THREE.BoxGeometry( 8, 7, 10 );
-geometry.translate(0,0,0);
+geometry.translate(8,0,0);
 var cube = new THREE.Mesh( geometry, material );
 
 var escena = new THREE.Scene();
