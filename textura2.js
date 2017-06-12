@@ -5,6 +5,7 @@ THREE.ImageUtils.crossOrigin = '';
 var material = new THREE.MeshLambertMaterial({map: textura});
 
 var material2 = new THREE.MeshBasicMaterial( {color: 0xfff99} );
+
 var geometry = new THREE.BoxGeometry( 8, 7, 10 );
 geometry.translate(0,0,0);
 var cube = new THREE.Mesh( geometry, material2 );
@@ -16,8 +17,8 @@ var cube2 = new THREE.Mesh( geometry2, material2 );
 
 
 var geometry3 = new THREE.BoxGeometry(6,2,5);
-geometry2.translate(0,3,11.5);
-var cube3 = new THREE.Mesh( geometry2, material2 );
+geometry3.translate(0,3,11.5);
+var cube3 = new THREE.Mesh( geometry3, material2 );
 
 var zo = new THREE.Geometry();
 zo.merge(cube.geometry, cube.matrix);
