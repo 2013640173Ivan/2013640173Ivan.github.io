@@ -5,7 +5,7 @@ THREE.ImageUtils.crossOrigin = '';
 var material = new THREE.MeshLambertMaterial({map: textura});
 
 
-var geometry = new THREE.BoxGeometry( 28, 10, 15 );
+var geometry = new THREE.BoxGeometry( 10, 8, 7 );
 var cube = new THREE.Mesh( geometry, material );
 var escena = new THREE.Scene();
 escena.add( cube );
@@ -28,7 +28,7 @@ escena.add( cube );
   escena.add(luzPuntual);
 
 camara = new THREE.PerspectiveCamera();
-camara.position.z = 50;
+camara.position.z = 30;
 
 renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerHeight*.95, window.innerHeight*.95);
@@ -42,9 +42,9 @@ requestAnimationFrame(loop);
 
 
 
-cube.rotation.x += 0.01;
+cube.rotation.x += 0.00;
 
-cube.rotation.y += 0.01;
+cube.rotation.y += 0.00;
 
 
 renderer.render(escena, camara);
