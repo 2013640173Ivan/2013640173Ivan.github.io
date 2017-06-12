@@ -46,7 +46,7 @@ requestAnimationFrame(loop);
 
 
 
-cube.rotation.x += 0.00;
+cube.rotation.x += 0.01;
 
 cube.rotation.y += 0.00;
 
