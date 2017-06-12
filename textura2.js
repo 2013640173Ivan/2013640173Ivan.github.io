@@ -15,10 +15,14 @@ geometry2.translate(0,2,7);
 var cube2 = new THREE.Mesh( geometry2, material2 );
 
 
+var geometry3 = new THREE.BoxGeometry(6,2,5);
+geometry2.translate(0,3,11.5);
+var cube3 = new THREE.Mesh( geometry2, material2 );
+
 var zo = new THREE.Geometry();
 zo.merge(cube.geometry, cube.matrix);
 zo.merge(cube2.geometry, cube2.matrix);
-
+zo.merge(cube3.geometry, cube3.matrix);
 
 var mallazo = new THREE.Mesh(zo, material);
 //mallabomba.rotateY( Math.PI/4);
