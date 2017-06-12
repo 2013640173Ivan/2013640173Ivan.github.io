@@ -39,6 +39,12 @@ geometry7.translate(0,-2,-9);
 var cube7 = new THREE.Mesh( geometry7, material2 );
 
 
+
+var geometry8 = new THREE.BoxGeometry(2,11,2);
+geometry8.translate(2,-9,2.5);
+var cube8 = new THREE.Mesh( geometry8, material2 );
+
+
 var zo = new THREE.Geometry();
 zo.merge(cube.geometry, cube.matrix);
 zo.merge(cube2.geometry, cube2.matrix);
@@ -47,6 +53,7 @@ zo.merge(cube4.geometry, cube4.matrix);
 zo.merge(cube5.geometry, cube5.matrix);
 zo.merge(cube6.geometry, cube6.matrix);
 zo.merge(cube7.geometry, cube7.matrix);
+zo.merge(cube8.geometry, cube8.matrix);
 
 var mallazo = new THREE.Mesh(zo, material);
 //mallabomba.rotateY( Math.PI/4);
