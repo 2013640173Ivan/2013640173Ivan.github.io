@@ -1,4 +1,4 @@
-function setup (){
+
 THREE.ImageUtils.crossOrigin = '';
 //var textura =THREE.ImageUtils.loadTexture('2013640173Ivan.github.io/easter.jpg');
   var textura =THREE.ImageUtils.loadTexture('crate.gif');
@@ -58,7 +58,7 @@ camara.position.z = 50;
 renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerHeight*.95, window.innerHeight*.95);
 document.body.appendChild(renderer.domElement);
-}
+
 
 
 function loop() {
