@@ -71,6 +71,12 @@ var ojoi=new THREE.SphereGeometry(0.5,32,32);
 ojoi.translate(2.5,6,9);
 var mallojoi =new THREE.Mesh( ojoi, material2);
 
+var ojod=new THREE.SphereGeometry(0.5,32,32);
+ojoi.translate(-2.5,6,9);
+var mallojod =new THREE.Mesh( ojod, material2);
+
+
+
 var zo = new THREE.Geometry();
 zo.merge(cube.geometry, cube.matrix);
 zo.merge(cube2.geometry, cube2.matrix);
@@ -84,6 +90,7 @@ zo.merge(cube9.geometry, cube9.matrix);
 zo.merge(cube10.geometry, cube10.matrix);
 zo.merge(cube11.geometry, cube11.matrix);
 zo.merge(mallojoi.geometry, mallojoi.matrix);
+zo.merge(mallojod.geometry, mallojod.matrix);
 
 var mallazo = new THREE.Mesh(zo, material);
 //mallabomba.rotateY( Math.PI/4);
