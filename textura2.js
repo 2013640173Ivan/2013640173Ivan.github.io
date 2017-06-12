@@ -72,7 +72,7 @@ ojoi.translate(2.5,6,9);
 var mallojoi =new THREE.Mesh( ojoi, material2);
 
 var ojod=new THREE.SphereGeometry(0.5,32,32);
-ojoi.translate(-2.5,6,9);
+ojod.translate(-2.5,6,9);
 var mallojod =new THREE.Mesh( ojod, material2);
 
 
