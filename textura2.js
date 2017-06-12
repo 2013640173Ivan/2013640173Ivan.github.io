@@ -20,8 +20,8 @@ var geometry3 = new THREE.BoxGeometry(6,2,3);
 geometry3.translate(0,3,10.5);
 var cube3 = new THREE.Mesh( geometry3, material2 );
 
-var geometry4 = new THREE.BoxGeometry(8,6,4);
-geometry4.translate(0,6.5,7);
+var geometry4 = new THREE.BoxGeometry(8,5,4);
+geometry4.translate(0,5.5,7);
 var cube4 = new THREE.Mesh( geometry4, material2 );
 
 var zo = new THREE.Geometry();
