@@ -76,7 +76,7 @@ ojod.translate(-2.5,6,9);
 var mallojod =new THREE.Mesh( ojod, material2);
 
 var bottom = new THREE.CylinderGeometry( 14, 14, 2.5, 32 );
-bottom.translate(0,-12.5,0)
+bottom.translate(0,-13,0)
 var mallabot = new THREE.Mesh( bottom, material2 );
 
 var zo = new THREE.Geometry();
