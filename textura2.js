@@ -40,8 +40,8 @@ var cube7 = new THREE.Mesh( geometry7, material2 );
 
 
 
-var geometry8 = new THREE.BoxGeometry(2,11,2);
-geometry8.translate(2,-9,2.5);
+var geometry8 = new THREE.BoxGeometry(2,9,2);
+geometry8.translate(2,-7,2.5);
 var cube8 = new THREE.Mesh( geometry8, material2 );
 
 
