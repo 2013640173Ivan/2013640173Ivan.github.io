@@ -72,6 +72,19 @@ var geometry12 = new THREE.BoxGeometry(2,2,1);
 geometry12.translate(2,-11.5,4);
 var cube12 = new THREE.Mesh( geometry12, material2 );
 
+var geometry13 = new THREE.BoxGeometry(2,2,1);
+geometry13.translate(-2,-11.5,4);
+var cube13 = new THREE.Mesh( geometry13, material2 );
+
+var geometry14 = new THREE.BoxGeometry(2,2,1);
+geometry14.translate(2,-11.5,-4);
+var cube14 = new THREE.Mesh( geometry14, material2 );
+
+
+var geometry15 = new THREE.BoxGeometry(2,2,1);
+geometry15.translate(-2,-11.5,-4);
+var cube15 = new THREE.Mesh( geometry15, material2 );
+
 
 var ojoi=new THREE.SphereGeometry(0.5,32,32);
 ojoi.translate(2.5,6,9);
@@ -84,7 +97,7 @@ var mallojod =new THREE.Mesh( ojod, material2);
 
 
 var bottom = new THREE.CylinderGeometry( 14, 14, 2.5, 32 );
-bottom.translate(0,-13,0)
+bottom.translate(0,-13.5,0)
 var mallabot = new THREE.Mesh( bottom, material2 );
 
 var zo = new THREE.Geometry();
@@ -100,6 +113,9 @@ zo.merge(cube9.geometry, cube9.matrix);
 zo.merge(cube10.geometry, cube10.matrix);
 zo.merge(cube11.geometry, cube11.matrix);
 zo.merge(cube12.geometry, cube12.matrix);
+zo.merge(cube13.geometry, cube12.matrix);
+zo.merge(cube14.geometry, cube12.matrix);
+zo.merge(cube15.geometry, cube12.matrix);
 zo.merge(mallojoi.geometry, mallojoi.matrix);
 zo.merge(mallojod.geometry, mallojod.matrix);
 zo.merge(mallabot.geometry, mallabot.matrix);
