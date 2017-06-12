@@ -5,7 +5,7 @@ THREE.ImageUtils.crossOrigin = '';
 var material = new THREE.MeshLambertMaterial({map: textura});
 
 
-var geometry = new THREE.BoxGeometry( 8, 10, 7 );
+var geometry = new THREE.BoxGeometry( 8, 7, 10 );
 geometry.translate(5,0,0);
 var cube = new THREE.Mesh( geometry, material );
 
