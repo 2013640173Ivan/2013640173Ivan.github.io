@@ -16,7 +16,7 @@ geometry2.translate(0,2,7);
 var cube2 = new THREE.Mesh( geometry2, material2 );
 
 
-var geometry3 = new THREE.BoxGeometry(6,2,5);
+var geometry3 = new THREE.BoxGeometry(6,2,3);
 geometry3.translate(0,3,11.5);
 var cube3 = new THREE.Mesh( geometry3, material2 );
 
