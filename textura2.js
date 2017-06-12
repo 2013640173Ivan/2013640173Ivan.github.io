@@ -34,7 +34,7 @@ var geometry6 = new THREE.BoxGeometry(3,5,1.5);
 geometry6.translate(-2.5,10.5,6.75);
 var cube6 = new THREE.Mesh( geometry6, material2 );
 
-var geometry7 = new THREE.BoxGeometry(5,3,8);
+var geometry7 = new THREE.BoxGeometry(3,3,8);
 geometry7.translate(0,-2,-9);
 var cube7 = new THREE.Mesh( geometry7, material2 );
 
