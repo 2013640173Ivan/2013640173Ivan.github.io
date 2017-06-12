@@ -68,7 +68,7 @@ var cube11 = new THREE.Mesh( geometry11, material2 );
 
 
 var ojoi=new THREE.SphereGeometry(0.5,32,32);
-ojoi.translate(3,8,9);
+ojoi.translate(2.5,6,9);
 var mallojoi =new THREE.Mesh( ojoi, material2);
 
 var zo = new THREE.Geometry();
