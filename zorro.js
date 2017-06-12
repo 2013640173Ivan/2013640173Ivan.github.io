@@ -30,6 +30,7 @@ escena.add(cubo);
 var camara = new THREE.PerspectiveCamera();
 camara.position.y = 160; // Elevamos la cámara
 camara.position.z = 400; // Alejamos la cámara
+escena.add(camara);
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
