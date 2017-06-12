@@ -4,22 +4,35 @@ THREE.ImageUtils.crossOrigin = '';
   var textura =THREE.ImageUtils.loadTexture('crate.gif');
 var material = new THREE.MeshLambertMaterial({map: textura});
 
-
+var material2 = new THREE.MeshBasicMaterial( {color: 0xfff99} );
 var geometry = new THREE.BoxGeometry( 8, 7, 10 );
 geometry.translate(0,0,0);
-var cube = new THREE.Mesh( geometry, material );
+var cube = new THREE.Mesh( geometry, material2 );
 
 
 var geometry2 = new THREE.BoxGeometry(10,3,4);
 geometry2.translate(0,2,5);
-var cube2 = new THREE.Mesh( geometry2, material );
+var cube2 = new THREE.Mesh( geometry2, material2 );
 
+
+var zo = new THREE.Geometry();
+zo.merge(cube.geometry, cube.matrix);
+zo.merge(cube2.geometry, cube2.matrix);
+
+
+var mallazo = new THREE.Mesh(zo, material);
+//mallabomba.rotateY( Math.PI/4);
 var escena = new THREE.Scene();
+//mallabomba.scale.set(0.75,0.75,0.75);
+escena.add(mallazo);
+
+
+/*var escena = new THREE.Scene();
 
 
 escena.add( cube );
-escena.add(ciben2);
-
+escena.add(cube2);
+*/
 
 
  
@@ -52,12 +65,12 @@ requestAnimationFrame(loop);
 
 
 
-cube.rotation.x += 0.01;
+mallazo.rotation.x += 0.01;
 
 cube.rotation.y += 0.01;
 
 
-renderer.render(escena, camara);
+mallazo.render(escena, camara);
 
 
 }
