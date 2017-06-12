@@ -69,20 +69,20 @@ var cube11 = new THREE.Mesh( geometry11, material2 );
 
 
 var geometry12 = new THREE.BoxGeometry(2,2,1);
-geometry12.translate(2,-11.5,4);
+geometry12.translate(2,-10.5,4);
 var cube12 = new THREE.Mesh( geometry12, material2 );
 
 var geometry13 = new THREE.BoxGeometry(2,2,1);
-geometry13.translate(-2,-11.5,4);
+geometry13.translate(-2,-10.5,4);
 var cube13 = new THREE.Mesh( geometry13, material2 );
 
 var geometry14 = new THREE.BoxGeometry(2,2,1);
-geometry14.translate(2,-11.5,-4);
+geometry14.translate(2,-10.5,-1);
 var cube14 = new THREE.Mesh( geometry14, material2 );
 
 
 var geometry15 = new THREE.BoxGeometry(2,2,1);
-geometry15.translate(-2,-11.5,-4);
+geometry15.translate(-2,-10.5,-1);
 var cube15 = new THREE.Mesh( geometry15, material2 );
 
 
