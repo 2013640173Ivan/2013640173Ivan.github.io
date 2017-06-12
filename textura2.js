@@ -1,7 +1,7 @@
 
 THREE.ImageUtils.crossOrigin = '';
 //var textura =THREE.ImageUtils.loadTexture('2013640173Ivan.github.io/easter.jpg');
-  var textura =THREE.ImageUtils.loadTexture('crate.gif');
+  var textura =THREE.ImageUtils.loadTexture('blu.png');
 var material = new THREE.MeshLambertMaterial({map: textura});
 
 var material2 = new THREE.MeshBasicMaterial( {color: 0xfff99} );
