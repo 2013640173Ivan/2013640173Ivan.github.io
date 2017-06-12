@@ -45,6 +45,28 @@ geometry8.translate(2,-7,2.5);
 var cube8 = new THREE.Mesh( geometry8, material2 );
 
 
+
+
+
+var geometry9 = new THREE.BoxGeometry(2,9,2);
+geometry9.translate(-2,-7,2.5);
+var cube9 = new THREE.Mesh( geometry9, material2 );
+
+
+
+
+var geometry10 = new THREE.BoxGeometry(2,9,2);
+geometry10.translate(2,-7,-2.5);
+var cube10 = new THREE.Mesh( geometry10, material2 );
+
+
+
+
+var geometry11 = new THREE.BoxGeometry(2,9,2);
+geometry11.translate(-2,-7,-2.5);
+var cube11 = new THREE.Mesh( geometry11, material2 );
+
+
 var zo = new THREE.Geometry();
 zo.merge(cube.geometry, cube.matrix);
 zo.merge(cube2.geometry, cube2.matrix);
@@ -54,6 +76,9 @@ zo.merge(cube5.geometry, cube5.matrix);
 zo.merge(cube6.geometry, cube6.matrix);
 zo.merge(cube7.geometry, cube7.matrix);
 zo.merge(cube8.geometry, cube8.matrix);
+zo.merge(cube9.geometry, cube9.matrix);
+zo.merge(cube10.geometry, cube10.matrix);
+zo.merge(cube11.geometry, cube11.matrix);
 
 var mallazo = new THREE.Mesh(zo, material);
 //mallabomba.rotateY( Math.PI/4);
