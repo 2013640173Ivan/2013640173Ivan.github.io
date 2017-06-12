@@ -33,7 +33,7 @@ ojos.translate(0,12,0);
 pingui.merge(malla.geometry, malla.matrix);
 pingui.merge(mallojos.geometry, mallojos.matrix);
   
-  var mallapingui = new THREE.Mesh(pingui, material2);
+  var mallapingui = new THREE.Mesh(pingui, material);
 //mallapingui.rotateY( Math.PI/8 );
 
   
