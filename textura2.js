@@ -67,10 +67,10 @@ requestAnimationFrame(loop);
 
 mallazo.rotation.x += 0.01;
 
-cube.rotation.y += 0.01;
+mallazo.rotation.y += 0.01;
 
 
-mallazo.render(escena, camara);
+renderer.render(escena, camara);
 
 
 }
